@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <!--base(href="/")-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Title -->
+        <title>Publications Page</title>
+        <!-- SEO Meta -->
+        <meta name="description" content="GreenBazar description">
+        <meta name="keywords" content="greenbazar">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+      <script type="module" crossorigin src="/assets/main-7e27c473.js"></script>
+      <link rel="stylesheet" href="/assets/main-5b3b9297.css">
+    </head>
+    <body>
+        <!-- Header -->
+        
+<header class="header">
+  <div class="container header__container">
+    <div class="logo header__logo"><a class="logo__link" href="#" aria-label="logo"><img class="logo__img" src="img/logo.svg" width="132" height="74" alt="logo"/></a></div>
+    <nav class="menu header__menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link is-active" href="#">Продукція</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Послуги</a></li>
+        <li class="menu__item is-dropdown"><a class="menu__link is-dropdown__toggle" href="#">Про компанію
+            <svg class="menu__arrow" width="12" height="8">
+              <use xlink:href="img/sprite.svg#arrow-down"></use>
+            </svg></a>
+          <ul class="menu__sub is-dropdown__menu">
+            <li class="menu__sub-item"><a class="menu__sub-link" href="#">Про нас</a></li>
+            <li class="menu__sub-item"><a class="menu__sub-link" href="#">Каталог (PDF)</a></li>
+            <li class="menu__sub-item"><a class="menu__sub-link" href="#" data-modal="modal-login">Вхід для співробітників</a></li>
+          </ul>
+        </li>
+        <li class="menu__item"><a class="menu__link" href="#">Фармаконагляд</a></li>
+      </ul>
+    </nav><a class="header__phone" href="tel:+380442332557">
+      <svg class="header__phone-icon" width="16" height="16">
+        <use xlink:href="img/sprite.svg#phone"></use>
+      </svg><span>(044) 233 25 57</span></a>
+    <nav class="actions header__actions">
+      <ul class="actions__list">
+        <li class="actions__item actions__item--visible-xl">
+          <button class="actions__button" type="button" aria-label="Show phone">
+            <svg class="actions__icon" width="25" height="25">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+          </button>
+          <div class="actions__phone actions__dropdown"><a class="actions__phone-link" href="tel:+380442332557">(044) 233 25 57</a></div>
+        </li>
+        <li class="actions__item">
+          <button class="actions__button" type="button" aria-label="Show work time">
+            <svg class="actions__icon" width="27" height="26">
+              <use xlink:href="img/sprite.svg#clock"></use>
+            </svg>
+          </button>
+          <div class="work-time actions__dropdown">
+            <svg class="work-time__icon" width="47" height="46">
+              <use xlink:href="img/sprite.svg#clock"></use>
+            </svg>
+            <h3 class="work-time__title">Графік роботи</h3>
+            <div class="work-time__text">
+              <p>ПН-ЧТ: 9.00-18.00</p>
+              <p>ПТ: 9.00-17.30</p>
+              <p>CБ-ВС: Вихідний</p>
+            </div>
+          </div>
+        </li>
+        <li class="actions__item">
+          <button class="actions__button" type="button" aria-label="Show search">
+            <svg class="actions__icon" width="25" height="25">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <form class="search-form actions__dropdown">
+            <input class="search-form__input" type="text" name="searchFormInput" placeholder="" autocomplete="off" required="required"/>
+            <button class="search-form__button" type="button" aria-label="Search">
+              <svg class="search-form__icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+    <div class="lang header__lang">
+      <button class="lang__toggle" type="button" aria-label="Choose language">UA
+        <svg class="lang__toggle-icon" width="12" height="8">
+          <use xlink:href="img/sprite.svg#arrow-down"></use>
+        </svg>
+      </button>
+      <ul class="lang__dropdown">
+        <li class="lang__item"><a class="lang__link" href="#">EN</a></li>
+        <li class="lang__item"><a class="lang__link" href="#">GR</a></li>
+      </ul>
+    </div>
+    <button class="burger header__right-menu" type="button" aria-label="Open right menu" aria-expanded="false" data-right-toggle="data-right-toggle">
+      <div class="burger__line"></div>
+      <div class="burger__line"></div>
+      <div class="burger__line"></div>
+    </button>
+    <button class="burger header__mobile-menu" type="button" aria-label="Open mobile menu" aria-expanded="false" data-nav-toggle="data-nav-toggle">
+      <div class="burger__line"></div>
+      <div class="burger__line"></div>
+      <div class="burger__line"></div>
+    </button>
+  </div>
+</header>
+
+        <!-- Main -->
+        <main id="main" class="main">
+            
+<section class="publications-section">
+  <div class="container publications-section__container">
+    <nav class="breadcrumbs animation-down" aria-label="breadcrumb">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Головна</a></li>
+        <li class="breadcrumbs__item" aria-current="page">Публікації</li>
+      </ul>
+    </nav>
+    <h2 class="section-title publications-section__title animation-down">Публікації</h2>
+    <ul class="publications-section__list">
+      <li class="publications-section__item animation-down">
+        <div class="info">
+          <svg class="info__icon" width="41" height="41">
+            <use xlink:href="img/sprite.svg#book"></use>
+          </svg>
+          <h3 class="info__title">Цикатридина суппозитории</h3>
+          <div class="info__text">
+            <ul class="info__dot-list">
+              <li><a href="#">Вплив препарату Cicatridina на зміни піхви внаслідок променевого лікування раку шийки матки або ендометрія. Спостережне дослідження.</a></li>
+              <li><a href="#">Оцінка ефективності використання супозиторіїв Cicatridina для загоєння і відновлення шийки матки, піхви і зовнішніх статевих органів жінки.</a></li>
+              <li><a href="#">Клінічна ефективність гормональних та негормональних засобів у лікування вульвовагінальної атрофії.</a></li>
+              <li><a href="#">Неінфекційні вагініти – проблема 21 століття.</a></li>
+              <li><a href="#">Ектопія як фактор ризику ВПЛ інфекції шийки матки та мета первинних профілактичних заходів.</a></li>
+              <li><a href="#">Порівняння вагінальних супозиторіїв с гіалуроновою кислотою та вагінальних супозиторіїв с естрадіолом при лікуванні атрофічного кольпіта.</a></li>
+              <li><a href="#">Сучасні можливості відновлення та загоєння статевих органів нижнього відділу у жінок.</a></li>
+              <li><a href="#">Лікування доброякісної мікрогландулярної гіперплазії у жінок фертильного віку з порушеннями вегетативного .гомеостазу</a></li>
+              <li><a href="#">Обґрунтованість місцевої терапії вагінальними супозиторіями з гіалуроновою кислотою при лікуванні побічних ефектів від променевої та хіміотерапії піхви. </a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="publications-section__item animation-down">
+        <div class="info">
+          <svg class="info__icon" width="41" height="41">
+            <use xlink:href="img/sprite.svg#book"></use>
+          </svg>
+          <h3 class="info__title">Неопробіо</h3>
+          <div class="info__text">
+            <ul class="info__dot-list">
+              <li><a href="#">Оптимізація терапії вульвовагінітів у жінок в менопаузі.</a></li>
+              <li><a href="#">Оцінка ефективності пробіотика Неопробіо у відновленні порушеного мікробіома піхви вагітних.</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="publications-section__item animation-down">
+        <div class="info">
+          <svg class="info__icon" width="41" height="41">
+            <use xlink:href="img/sprite.svg#book"></use>
+          </svg>
+          <h3 class="info__title">Вагікаль</h3>
+          <div class="info__text">
+            <ul class="info__dot-list">
+              <li><a href="#">Негормональне лікування атрофічного кольпіта.</a></li>
+              <li><a href="#">Клінічний досвід застосування вагінальних супозиторіїв Вагікаль після електрохірургічного лікування патології шийки матки.</a></li>
+              <li><a href="#">Сучасні підходи до лікування доброякісних та передпухлинних захворювань шийки матки.</a></li>
+              <li><a href="#">Ефективність застосування препарату Вагікаль при бактеріальному вагінозі у періоді гестації.</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="publications-section__item animation-down">
+        <div class="info">
+          <svg class="info__icon" width="41" height="41">
+            <use xlink:href="img/sprite.svg#book"></use>
+          </svg>
+          <h3 class="info__title">Кандибор</h3>
+          <div class="info__text">
+            <ul class="info__dot-list">
+              <li><a href="#">Тактика ведення пацієнток з вульвовагінальним кандидозом. Рекомендації Британської асоціації з питань сексуального здоров’я та ВІЛ 2019.</a></li>
+              <li><a href="#">Вульвовагініти: скринінг та лікування вульвовагінального кандидоза, трихомоніазата бактеріального вагіноза. Огляд практичних рекомендацій товариства акушерів і гінекологів Канади 2015 рік.</a></li>
+              <li><a href="#">Використання клініцистами вагінальної підтримуючої терапії борною кислотою при рецидивуючому вульвовагінальному кандидозі та бактеріальному вагінозі.</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="publications-section__item animation-down">
+        <div class="info">
+          <svg class="info__icon" width="41" height="41">
+            <use xlink:href="img/sprite.svg#book"></use>
+          </svg>
+          <h3 class="info__title">Проктіс М</h3>
+          <div class="info__text">
+            <ul class="info__dot-list">
+              <li><a href="#">Вплив гіалуронової кислоти на час загоєння при гемороїдектомії за Міліграном-Морганом.</a></li>
+              <li><a href="#">Порівняння використання гіалуронової кислоти та гліцерилтринітрата для лікування гострої анальної тріщини.</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="publications-section__item animation-down">
+        <div class="info">
+          <svg class="info__icon" width="41" height="41">
+            <use xlink:href="img/sprite.svg#book"></use>
+          </svg>
+          <h3 class="info__title">Прокселан</h3>
+          <div class="info__text">
+            <ul class="info__dot-list">
+              <li><a href="#">Роль Прокселану (Proxelan) у лікуванні хронічного простатиту.</a></li>
+              <li><a href="#">Вплив монотерапії фітокомплексом, що включає насіння гарбуза, Centella asiatica, Boswellia, Helichrysum, вітамін-Е-ацетат, Melaleuca alternifolia та гіалуронову кислоту, на пацієнтів із синдромом хронічного тазового болю.</a></li>
+              <li><a href="#">Застосування супозиторіїв Прокселан в лікуванні симптомів нижніх сечових шляхів, асоційованих з хронічним простатитом і доброякісною гіперплазією передміхурової залози.</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="publications-section__item animation-down">
+        <div class="info">
+          <svg class="info__icon" width="41" height="41">
+            <use xlink:href="img/sprite.svg#book"></use>
+          </svg>
+          <h3 class="info__title">Кроха Д3</h3>
+          <div class="info__text">
+            <ul class="info__dot-list">
+              <li><a href="#">Роль застосування пероральних крапель Кроха D3 у профілактиці розвитку дисплазії кульшових суглобів.</a></li>
+              <li><a href="#">Глобальний консенсус щодо профілактикита ведення пацієнтів з аліментарним рахітом: основні положення. Реферативний огляд. 2020 рік.</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="publications-section__item animation-down">
+        <div class="info">
+          <svg class="info__icon" width="41" height="41">
+            <use xlink:href="img/sprite.svg#book"></use>
+          </svg>
+          <h3 class="info__title">Медідерм</h3>
+          <div class="info__text">
+            <ul class="info__dot-list">
+              <li><a href="#">Рекомендації з лікування атопічного дерматиту Європейського дерматологічного форуму, 2019. “Дитячий лікар» №1, 2020</a></li>
+              <li><a href="#">Витяг із Рекомендацій з лікування атопічного дерматиту Європейського дерматологічного форуму (2019, European Dermatology Forum).</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="publications-section__item animation-down">
+        <div class="info">
+          <svg class="info__icon" width="41" height="41">
+            <use xlink:href="img/sprite.svg#book"></use>
+          </svg>
+          <h3 class="info__title">Цикатридина мазь та спрей</h3>
+          <div class="info__text">
+            <ul class="info__dot-list">
+              <li><a href="#">Ефективність гіалуронової кислоти в лікуванні синдрома діабетичної стопи. Результати системного огляду.</a></li>
+              <li><a href="#">Використання похідних гіалуронової кислоти в лікуванні ран що тривало загоюються. Системний огляд.</a></li>
+              <li><a href="#">Гіалуронова кислота при загоєнні ран: Повторне відкриття головного гравця.</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="publications-section__item animation-down">
+        <div class="info">
+          <svg class="info__icon" width="41" height="41">
+            <use xlink:href="img/sprite.svg#book"></use>
+          </svg>
+          <h3 class="info__title">СК-СД, стрептокіназа-стрептодорназа</h3>
+          <div class="info__text">
+            <ul class="info__dot-list">
+              <li><a href="#">Комплексна терапія синдрому хронічного тазового болю у пацієнток із хронічними запальними захворюваннями органів малого таза.</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+        </main>
+
+        <!-- Footer -->
+        
+<footer class="footer">
+  <div class="container footer__container-top">
+    <div class="logo footer__logo"><a class="logo__link" href="#" aria-label="logo"><img class="logo__img" src="img/logo.svg" width="132" height="74" alt="logo"/></a></div>
+    <address class="social footer__social">
+      <ul class="social__list">
+        <li class="social__item"><a class="social__link social__link--phone" href="#">
+            <svg class="social__icon" width="21" height="21">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link social__link--facebook" href="#">
+            <svg class="social__icon" width="12" height="23">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link social__link--youtube" href="#">
+            <svg class="social__icon" width="22" height="15">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link social__link--telegram" href="#">
+            <svg class="social__icon" width="18" height="16">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link social__link--linkedin" href="#">
+            <svg class="social__icon" width="15" height="15">
+              <use xlink:href="img/sprite.svg#linkedin"></use>
+            </svg></a></li>
+      </ul>
+    </address>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__container-middle">
+      <nav class="footer-menu">
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Продукція</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Чому ми</a></li>
+          <li class="footer-menu__item is-dropdown"><a class="footer-menu__link is-dropdown__toggle" href="#">Про компанію
+              <svg class="footer-menu__arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="footer-menu__sub is-dropdown__menu">
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Про нас</a></li>
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Каталог (PDF)</a></li>
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Вхід для співробітників</a></li>
+            </ul>
+          </li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Фармаконагляд</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вакансії</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Партнери</a></li>
+          <li class="footer-menu__item is-dropdown"><a class="footer-menu__link is-dropdown__toggle" href="#">Професіоналам
+              <svg class="footer-menu__arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="footer-menu__sub is-dropdown__menu">
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Публікації</a></li>
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Спеціальна пропозиція для клінік</a></li>
+            </ul>
+          </li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новини</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer__container-bottom">
+      <div class="footer__dev">Розробка сайту <a class="footer__dev-link" href="#"><img class="footer__dev-img" src="img/shafem.svg" width="90" height="20" alt="shafem logo"/></a></div>
+      <div class="footer__copyright">&copy; 2023 Всі права захищені</div>
+    </div>
+  </div>
+</footer>
+
+        <!-- Mobile Nav -->
+        
+<div class="mobile-nav">
+  <div class="mobile-nav__sidebar">
+    <div class="mobile-nav__inner">
+      <address class="social mobile-nav__social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--white" href="#">
+              <svg class="social__icon" width="21" height="21">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#">
+              <svg class="social__icon" width="12" height="23">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link social__link--youtube" href="#">
+              <svg class="social__icon" width="22" height="15">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link social__link--telegram" href="#">
+              <svg class="social__icon" width="18" height="16">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link social__link--linkedin" href="#">
+              <svg class="social__icon" width="15" height="15">
+                <use xlink:href="img/sprite.svg#linkedin"></use>
+              </svg></a></li>
+        </ul>
+      </address>
+      <nav class="mobile-nav-menu">
+        <ul class="mobile-nav-menu__list">
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Продукція</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Чому ми</a></li>
+          <li class="mobile-nav-menu__item is-dropdown"><a class="mobile-nav-menu__link is-dropdown__toggle" href="#">Про компанію
+              <svg class="mobile-nav-menu__arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="mobile-nav-menu__sub is-dropdown__menu">
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Про нас</a></li>
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Каталог (PDF)</a></li>
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Вхід для співробітників</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Фармаконагляд</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Вакансії</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Партнери</a></li>
+          <li class="mobile-nav-menu__item is-dropdown"><a class="mobile-nav-menu__link is-dropdown__toggle" href="#">Професіоналам
+              <svg class="mobile-nav-menu__arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="mobile-nav-menu__sub is-dropdown__menu">
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Публікації</a></li>
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Спеціальна пропозиція для клінік</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Новини</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-nav__work">
+        <svg class="mobile-nav__work-icon" width="33" height="32">
+          <use xlink:href="img/sprite.svg#clock"></use>
+        </svg>
+        <h3 class="mobile-nav__work-title">Графік роботи</h3>
+        <div class="mobile-nav__work-text">
+          <p>ПН-ЧТ: 9.00-18.00</p>
+          <p>ПТ: 9.00-17.30</p>
+          <p>CБ-ВС: Вихідний</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- Right Nav -->
+        
+<div class="right-nav">
+  <div class="right-nav__sidebar">
+    <div class="right-nav__inner">    
+      <nav class="right-nav-menu">
+        <ul class="right-nav-menu__list">
+          <li class="right-nav-menu__item"><a class="right-nav-menu__link" href="#">Вакансії</a></li>
+          <li class="right-nav-menu__item"><a class="right-nav-menu__link" href="#">Партнери</a></li>
+          <li class="right-nav-menu__item is-dropdown"><a class="right-nav-menu__link is-dropdown__toggle" href="#">Професіоналам
+              <svg class="right-nav-menu__arrow" width="12" height="8">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="right-nav-menu__sub is-dropdown__menu">
+              <li class="right-nav-menu__sub-item"><a class="right-nav-menu__sub-link" href="#">Публікації</a></li>
+              <li class="right-nav-menu__sub-item"><a class="right-nav-menu__sub-link" href="#">Спеціальна пропозиція для клінік</a></li>
+            </ul>
+          </li>
+          <li class="right-nav-menu__item"><a class="right-nav-menu__link" href="#">Новини</a></li>
+          <li class="right-nav-menu__item"><a class="right-nav-menu__link" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+        <!-- Share -->
+        
+<div class="share">
+  <ul class="share__list">
+    <li class="share__item"><a class="share__link share__link--youtube" href="#">
+        <div class="share__pic">
+          <svg class="share__icon" width="22" height="15">
+            <use xlink:href="img/sprite.svg#youtube"></use>
+          </svg>
+        </div><span>Наш Youtube</span></a></li>
+    <li class="share__item"><a class="share__link share__link--telegram" href="#">
+        <div class="share__pic">
+          <svg class="share__icon" width="18" height="16">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
+        </div><span>Наш Telegram</span></a></li>
+    <li class="share__item"><a class="share__link share__link--linkedin" href="#">
+        <div class="share__pic">
+          <svg class="share__icon" width="15" height="15">
+            <use xlink:href="img/sprite.svg#linkedin"></use>
+          </svg>
+        </div><span>Наш Linkedin</span></a></li>
+    <li class="share__item"><a class="share__link share__link--facebook" href="#">
+        <div class="share__pic">
+          <svg class="share__icon" width="12" height="23">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+          </svg>
+        </div><span>Наш Facebook</span></a></li>
+  </ul>
+</div>
+        
+        <!-- Modals -->
+        
+<div class="modal-wrap">
+  <div class="modal" id="modal-login">
+    <div class="modal__inner">
+      <div class="modal__window">
+        <button class="modal__close" aria-label="Close modal" data-modal-close="data-modal-close" type="button">
+          <svg class="modal__close-icon" width="28" height="29">
+            <use xlink:href="img/sprite.svg#close-modal"></use>
+          </svg>
+        </button>
+        <h3 class="modal__title">Вхід для співробітників</h3>
+        <div class="modal__descr">
+          <p>Після вибору сервісу авторизуйтесь в системі.</p>
+          <p>Сервіс доступний тільки для співробітників компанії</p>
+        </div>
+        <ul class="modal-login">
+          <li class="modal-login__item"><a class="modal-login__link" href="#"> 
+              <div class="modal-login__pic">
+                <svg class="modal-login__icon" width="47" height="37">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
+              </div>
+              <div class="modal-login__content">
+                <h3 class="modal-login__title">Пошта Roundcube</h3>
+                <p class="modal-login__descr">Вхід до поштового сервісу Roundcube</p>
+              </div></a></li>
+          <li class="modal-login__item"><a class="modal-login__link" href="#"> 
+              <div class="modal-login__pic">
+                <svg class="modal-login__icon" width="47" height="37">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
+              </div>
+              <div class="modal-login__content">
+                <h3 class="modal-login__title">Пошта RainLoop</h3>
+                <p class="modal-login__descr">Вхід до поштового сервісу RainLoop</p>
+              </div></a></li>
+          <li class="modal-login__item"><a class="modal-login__link" href="#"> 
+              <div class="modal-login__pic">
+                <svg class="modal-login__icon" width="45" height="38">
+                  <use xlink:href="img/sprite.svg#file"></use>
+                </svg>
+              </div>
+              <div class="modal-login__content">
+                <h3 class="modal-login__title">Файлообмінник</h3>
+                <p class="modal-login__descr">Вхід до файлообміннику</p>
+              </div></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+    </body>
+</html>

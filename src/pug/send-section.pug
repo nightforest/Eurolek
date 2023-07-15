@@ -1,0 +1,32 @@
+section.send-section
+    .container.send-section__container
+        form.form(id="form" autocomplete="off" novalidate="novalidate")
+            h2.section-title.form__title Відправити резюме на вакансію
+
+            .form__row
+                .form__group.form__group--4
+                    input#inputName.input.form__input(type="text" name="inputFirstName" placeholder="" autocomplete="off" required)
+                    label.form__placeholder Ім'я *
+                
+                .form__group.form__group--4
+                    input#inputPhone.input.form__input.tell-input(type="text" name="inputPhone" placeholder="" autocomplete="off" required)
+
+                .form__group.form__group--4
+                    input#inputEmail.input.form__input(type="text" name="inputEmail" placeholder="" autocomplete="off" required)
+                    label.form__placeholder Пошта *
+
+            .form__group.form__group--mb-30
+                label.input-file
+                    .input-file__left
+                        svg.input-file__icon(width="16" height="16")
+                            use(xlink:href="img/sprite.svg#attach")
+                        span.input-file__button(type="button") Завантажити файл резюме
+                    span.input-file__text(type="text") Формати файлів: doc, docx, rtf, txt, odt, pdf (1 Mб максимум)
+                    input.input-file__field(type="file" name="file")
+
+            .form__group.form__group--mb-30
+                p.form__agree Згоден з умовами 
+                    a(href="#") політики конфіденційності
+
+            .form__button-group
+                button.button.button--green.form__button Надіслати

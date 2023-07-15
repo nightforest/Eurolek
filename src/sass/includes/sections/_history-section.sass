@@ -1,0 +1,47 @@
+.history-section
+    position: relative
+    padding: 100px 0
+    background: var(--blue)
+    overflow: hidden
+
+    @media ($max-md)
+        padding: 35px 0 45px
+
+    &__title
+        color: var(--white)
+        margin-bottom: 35px
+
+        @media ($max-md)
+            text-align: center
+            margin-bottom: 25px
+    
+    &__row
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        gap: 30px
+
+        @media ($max-md)
+            display: flex
+            flex-direction: column
+            gap: 20px
+    
+    &__col
+        position: relative
+        grid-column: 6 span
+    
+    &__picture
+        position: absolute
+        top: 0
+        right: 0
+        display: flex
+
+        @media ($max-md)
+            position: relative
+            top: auto
+            right: auto
+
+    &__img
+
+        @media ($max-md)
+            max-width: 100%
+            height: auto

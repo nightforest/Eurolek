@@ -1,0 +1,26 @@
+.letters-list
+    display: flex
+    gap: 9px
+    flex-wrap: wrap
+    margin: 0
+    padding: 0
+    list-style: none
+    line-height: 1.2
+
+    @media ($max-md)
+        justify-content: center
+
+    &__button
+        color: #B0B0B0
+        font-size: 18px
+        line-height: 1
+        font-weight: 400
+        outline: none
+        transition: color .5s ease
+
+        &:hover,
+        &:active,
+        &:focus-visible,
+        &.is-active
+            color: var(--blue)
+            outline: none

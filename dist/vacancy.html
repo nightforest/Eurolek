@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <!--base(href="/")-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Title -->
+        <title>Vacancy Page</title>
+        <!-- SEO Meta -->
+        <meta name="description" content="GreenBazar description">
+        <meta name="keywords" content="greenbazar">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+      <script type="module" crossorigin src="/assets/main-7e27c473.js"></script>
+      <link rel="stylesheet" href="/assets/main-5b3b9297.css">
+    </head>
+    <body>
+        <!-- Header -->
+        
+<header class="header">
+  <div class="container header__container">
+    <div class="logo header__logo"><a class="logo__link" href="#" aria-label="logo"><img class="logo__img" src="img/logo.svg" width="132" height="74" alt="logo"/></a></div>
+    <nav class="menu header__menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link is-active" href="#">Продукція</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Послуги</a></li>
+        <li class="menu__item is-dropdown"><a class="menu__link is-dropdown__toggle" href="#">Про компанію
+            <svg class="menu__arrow" width="12" height="8">
+              <use xlink:href="img/sprite.svg#arrow-down"></use>
+            </svg></a>
+          <ul class="menu__sub is-dropdown__menu">
+            <li class="menu__sub-item"><a class="menu__sub-link" href="#">Про нас</a></li>
+            <li class="menu__sub-item"><a class="menu__sub-link" href="#">Каталог (PDF)</a></li>
+            <li class="menu__sub-item"><a class="menu__sub-link" href="#" data-modal="modal-login">Вхід для співробітників</a></li>
+          </ul>
+        </li>
+        <li class="menu__item"><a class="menu__link" href="#">Фармаконагляд</a></li>
+      </ul>
+    </nav><a class="header__phone" href="tel:+380442332557">
+      <svg class="header__phone-icon" width="16" height="16">
+        <use xlink:href="img/sprite.svg#phone"></use>
+      </svg><span>(044) 233 25 57</span></a>
+    <nav class="actions header__actions">
+      <ul class="actions__list">
+        <li class="actions__item actions__item--visible-xl">
+          <button class="actions__button" type="button" aria-label="Show phone">
+            <svg class="actions__icon" width="25" height="25">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+          </button>
+          <div class="actions__phone actions__dropdown"><a class="actions__phone-link" href="tel:+380442332557">(044) 233 25 57</a></div>
+        </li>
+        <li class="actions__item">
+          <button class="actions__button" type="button" aria-label="Show work time">
+            <svg class="actions__icon" width="27" height="26">
+              <use xlink:href="img/sprite.svg#clock"></use>
+            </svg>
+          </button>
+          <div class="work-time actions__dropdown">
+            <svg class="work-time__icon" width="47" height="46">
+              <use xlink:href="img/sprite.svg#clock"></use>
+            </svg>
+            <h3 class="work-time__title">Графік роботи</h3>
+            <div class="work-time__text">
+              <p>ПН-ЧТ: 9.00-18.00</p>
+              <p>ПТ: 9.00-17.30</p>
+              <p>CБ-ВС: Вихідний</p>
+            </div>
+          </div>
+        </li>
+        <li class="actions__item">
+          <button class="actions__button" type="button" aria-label="Show search">
+            <svg class="actions__icon" width="25" height="25">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <form class="search-form actions__dropdown">
+            <input class="search-form__input" type="text" name="searchFormInput" placeholder="" autocomplete="off" required="required"/>
+            <button class="search-form__button" type="button" aria-label="Search">
+              <svg class="search-form__icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+    <div class="lang header__lang">
+      <button class="lang__toggle" type="button" aria-label="Choose language">UA
+        <svg class="lang__toggle-icon" width="12" height="8">
+          <use xlink:href="img/sprite.svg#arrow-down"></use>
+        </svg>
+      </button>
+      <ul class="lang__dropdown">
+        <li class="lang__item"><a class="lang__link" href="#">EN</a></li>
+        <li class="lang__item"><a class="lang__link" href="#">GR</a></li>
+      </ul>
+    </div>
+    <button class="burger header__right-menu" type="button" aria-label="Open right menu" aria-expanded="false" data-right-toggle="data-right-toggle">
+      <div class="burger__line"></div>
+      <div class="burger__line"></div>
+      <div class="burger__line"></div>
+    </button>
+    <button class="burger header__mobile-menu" type="button" aria-label="Open mobile menu" aria-expanded="false" data-nav-toggle="data-nav-toggle">
+      <div class="burger__line"></div>
+      <div class="burger__line"></div>
+      <div class="burger__line"></div>
+    </button>
+  </div>
+</header>
+
+        <!-- Main -->
+        <main id="main" class="main">
+            
+<section class="vacancy-section">
+  <div class="container vacancy-section__container">
+    <nav class="breadcrumbs animation-down" aria-label="breadcrumb">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Головна</a></li>
+        <li class="breadcrumbs__item" aria-current="page">Вакансії</li>
+      </ul>
+    </nav>
+    <h2 class="section-title vacancy-section__title animation-down">Медичний представник у відділі безрецептурних препаратів</h2>
+    <div class="vacancy-section__text">
+      <p>ТОВ "ОРГАНОСІН ЛТД" (на ринку України з 1996 року) - маркетингова компанія, що займається просуванням продуктів, вироблених під власними торговими марками, активно шукає кандидатів на позицію медичного представника відділу безрецептурних препаратів.</p>
+      <h3>Вимоги:</h3>
+      <ul>
+        <li>вища медична / фармацевтична освіта</li>
+        <li>цілеспрямованість, орієнтованість на результат</li>
+        <li>Навички ефективної комунікації</li>
+        <li>активна життєва позиція</li>
+        <li>ПК (рівень користувача)</li>
+        <li>досвід керування авто (водійське посвідчення)</li>
+      </ul>
+      <h3>Обов'язки:</h3>
+      <ul>
+        <li>просування препаратів компанії</li>
+        <li>організація та проведення презентацій, конференцій, круглих столів</li>
+        <li>активна робота з ключовими клієнтами - лікарі, аптеки, аптечні мережі</li>
+        <li>розширення територіальної клієнтської бази</li>
+      </ul>
+      <h3>Пропозиція компанії:</h3>
+      <ul>
+        <li>конкурентна заробітна плата + щомісячна бонусна система</li>
+        <li>офіційне працевлаштування</li>
+        <li>професійне і кар'єрне зростання</li>
+        <li>автомобіль</li>
+        <li>мобільний зв'язок</li>
+        <li>оплата Інтернет-зв'язку</li>
+        <li>медичне страхування (після успішного проходження випробувального терміну)</li>
+      </ul>
+    </div>
+    <div class="vacancy-section__location">
+      <svg class="vacancy-section__location-icon" width="32" height="40">
+        <use xlink:href="img/sprite.svg#location"></use>
+      </svg>Івано-Франківськ, Одеса
+    </div>
+  </div>
+</section>
+            
+<section class="send-section">
+  <div class="container send-section__container">
+    <form class="form" id="form" autocomplete="off" novalidate="novalidate">
+      <h2 class="section-title form__title">Відправити резюме на вакансію</h2>
+      <div class="form__row">
+        <div class="form__group form__group--4">
+          <input class="input form__input" id="inputName" type="text" name="inputFirstName" placeholder="" autocomplete="off" required="required"/>
+          <label class="form__placeholder">Ім'я *</label>
+        </div>
+        <div class="form__group form__group--4">
+          <input class="input form__input tell-input" id="inputPhone" type="text" name="inputPhone" placeholder="" autocomplete="off" required="required"/>
+        </div>
+        <div class="form__group form__group--4">
+          <input class="input form__input" id="inputEmail" type="text" name="inputEmail" placeholder="" autocomplete="off" required="required"/>
+          <label class="form__placeholder">Пошта *</label>
+        </div>
+      </div>
+      <div class="form__group form__group--mb-30">
+        <label class="input-file">
+          <div class="input-file__left">
+            <svg class="input-file__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#attach"></use>
+            </svg><span class="input-file__button" type="button">Завантажити файл резюме</span>
+          </div><span class="input-file__text" type="text">Формати файлів: doc, docx, rtf, txt, odt, pdf (1 Mб максимум)</span>
+          <input class="input-file__field" type="file" name="file"/>
+        </label>
+      </div>
+      <div class="form__group form__group--mb-30">
+        <p class="form__agree">Згоден з умовами <a href="#">політики конфіденційності</a></p>
+      </div>
+      <div class="form__button-group">
+        <button class="button button--green form__button">Надіслати</button>
+      </div>
+    </form>
+  </div>
+</section>
+        </main>
+
+        <!-- Footer -->
+        
+<footer class="footer">
+  <div class="container footer__container-top">
+    <div class="logo footer__logo"><a class="logo__link" href="#" aria-label="logo"><img class="logo__img" src="img/logo.svg" width="132" height="74" alt="logo"/></a></div>
+    <address class="social footer__social">
+      <ul class="social__list">
+        <li class="social__item"><a class="social__link social__link--phone" href="#">
+            <svg class="social__icon" width="21" height="21">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link social__link--facebook" href="#">
+            <svg class="social__icon" width="12" height="23">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link social__link--youtube" href="#">
+            <svg class="social__icon" width="22" height="15">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link social__link--telegram" href="#">
+            <svg class="social__icon" width="18" height="16">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link social__link--linkedin" href="#">
+            <svg class="social__icon" width="15" height="15">
+              <use xlink:href="img/sprite.svg#linkedin"></use>
+            </svg></a></li>
+      </ul>
+    </address>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__container-middle">
+      <nav class="footer-menu">
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Продукція</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Чому ми</a></li>
+          <li class="footer-menu__item is-dropdown"><a class="footer-menu__link is-dropdown__toggle" href="#">Про компанію
+              <svg class="footer-menu__arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="footer-menu__sub is-dropdown__menu">
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Про нас</a></li>
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Каталог (PDF)</a></li>
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Вхід для співробітників</a></li>
+            </ul>
+          </li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Фармаконагляд</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вакансії</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Партнери</a></li>
+          <li class="footer-menu__item is-dropdown"><a class="footer-menu__link is-dropdown__toggle" href="#">Професіоналам
+              <svg class="footer-menu__arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="footer-menu__sub is-dropdown__menu">
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Публікації</a></li>
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Спеціальна пропозиція для клінік</a></li>
+            </ul>
+          </li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новини</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer__container-bottom">
+      <div class="footer__dev">Розробка сайту <a class="footer__dev-link" href="#"><img class="footer__dev-img" src="img/shafem.svg" width="90" height="20" alt="shafem logo"/></a></div>
+      <div class="footer__copyright">&copy; 2023 Всі права захищені</div>
+    </div>
+  </div>
+</footer>
+
+        <!-- Mobile Nav -->
+        
+<div class="mobile-nav">
+  <div class="mobile-nav__sidebar">
+    <div class="mobile-nav__inner">
+      <address class="social mobile-nav__social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--white" href="#">
+              <svg class="social__icon" width="21" height="21">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#">
+              <svg class="social__icon" width="12" height="23">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link social__link--youtube" href="#">
+              <svg class="social__icon" width="22" height="15">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link social__link--telegram" href="#">
+              <svg class="social__icon" width="18" height="16">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link social__link--linkedin" href="#">
+              <svg class="social__icon" width="15" height="15">
+                <use xlink:href="img/sprite.svg#linkedin"></use>
+              </svg></a></li>
+        </ul>
+      </address>
+      <nav class="mobile-nav-menu">
+        <ul class="mobile-nav-menu__list">
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Продукція</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Чому ми</a></li>
+          <li class="mobile-nav-menu__item is-dropdown"><a class="mobile-nav-menu__link is-dropdown__toggle" href="#">Про компанію
+              <svg class="mobile-nav-menu__arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="mobile-nav-menu__sub is-dropdown__menu">
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Про нас</a></li>
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Каталог (PDF)</a></li>
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Вхід для співробітників</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Фармаконагляд</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Вакансії</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Партнери</a></li>
+          <li class="mobile-nav-menu__item is-dropdown"><a class="mobile-nav-menu__link is-dropdown__toggle" href="#">Професіоналам
+              <svg class="mobile-nav-menu__arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="mobile-nav-menu__sub is-dropdown__menu">
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Публікації</a></li>
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Спеціальна пропозиція для клінік</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Новини</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-nav__work">
+        <svg class="mobile-nav__work-icon" width="33" height="32">
+          <use xlink:href="img/sprite.svg#clock"></use>
+        </svg>
+        <h3 class="mobile-nav__work-title">Графік роботи</h3>
+        <div class="mobile-nav__work-text">
+          <p>ПН-ЧТ: 9.00-18.00</p>
+          <p>ПТ: 9.00-17.30</p>
+          <p>CБ-ВС: Вихідний</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- Right Nav -->
+        
+<div class="right-nav">
+  <div class="right-nav__sidebar">
+    <div class="right-nav__inner">    
+      <nav class="right-nav-menu">
+        <ul class="right-nav-menu__list">
+          <li class="right-nav-menu__item"><a class="right-nav-menu__link" href="#">Вакансії</a></li>
+          <li class="right-nav-menu__item"><a class="right-nav-menu__link" href="#">Партнери</a></li>
+          <li class="right-nav-menu__item is-dropdown"><a class="right-nav-menu__link is-dropdown__toggle" href="#">Професіоналам
+              <svg class="right-nav-menu__arrow" width="12" height="8">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="right-nav-menu__sub is-dropdown__menu">
+              <li class="right-nav-menu__sub-item"><a class="right-nav-menu__sub-link" href="#">Публікації</a></li>
+              <li class="right-nav-menu__sub-item"><a class="right-nav-menu__sub-link" href="#">Спеціальна пропозиція для клінік</a></li>
+            </ul>
+          </li>
+          <li class="right-nav-menu__item"><a class="right-nav-menu__link" href="#">Новини</a></li>
+          <li class="right-nav-menu__item"><a class="right-nav-menu__link" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+        <!-- Share -->
+        
+<div class="share">
+  <ul class="share__list">
+    <li class="share__item"><a class="share__link share__link--youtube" href="#">
+        <div class="share__pic">
+          <svg class="share__icon" width="22" height="15">
+            <use xlink:href="img/sprite.svg#youtube"></use>
+          </svg>
+        </div><span>Наш Youtube</span></a></li>
+    <li class="share__item"><a class="share__link share__link--telegram" href="#">
+        <div class="share__pic">
+          <svg class="share__icon" width="18" height="16">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
+        </div><span>Наш Telegram</span></a></li>
+    <li class="share__item"><a class="share__link share__link--linkedin" href="#">
+        <div class="share__pic">
+          <svg class="share__icon" width="15" height="15">
+            <use xlink:href="img/sprite.svg#linkedin"></use>
+          </svg>
+        </div><span>Наш Linkedin</span></a></li>
+    <li class="share__item"><a class="share__link share__link--facebook" href="#">
+        <div class="share__pic">
+          <svg class="share__icon" width="12" height="23">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+          </svg>
+        </div><span>Наш Facebook</span></a></li>
+  </ul>
+</div>
+        
+        <!-- Modals -->
+        
+<div class="modal-wrap">
+  <div class="modal" id="modal-login">
+    <div class="modal__inner">
+      <div class="modal__window">
+        <button class="modal__close" aria-label="Close modal" data-modal-close="data-modal-close" type="button">
+          <svg class="modal__close-icon" width="28" height="29">
+            <use xlink:href="img/sprite.svg#close-modal"></use>
+          </svg>
+        </button>
+        <h3 class="modal__title">Вхід для співробітників</h3>
+        <div class="modal__descr">
+          <p>Після вибору сервісу авторизуйтесь в системі.</p>
+          <p>Сервіс доступний тільки для співробітників компанії</p>
+        </div>
+        <ul class="modal-login">
+          <li class="modal-login__item"><a class="modal-login__link" href="#"> 
+              <div class="modal-login__pic">
+                <svg class="modal-login__icon" width="47" height="37">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
+              </div>
+              <div class="modal-login__content">
+                <h3 class="modal-login__title">Пошта Roundcube</h3>
+                <p class="modal-login__descr">Вхід до поштового сервісу Roundcube</p>
+              </div></a></li>
+          <li class="modal-login__item"><a class="modal-login__link" href="#"> 
+              <div class="modal-login__pic">
+                <svg class="modal-login__icon" width="47" height="37">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
+              </div>
+              <div class="modal-login__content">
+                <h3 class="modal-login__title">Пошта RainLoop</h3>
+                <p class="modal-login__descr">Вхід до поштового сервісу RainLoop</p>
+              </div></a></li>
+          <li class="modal-login__item"><a class="modal-login__link" href="#"> 
+              <div class="modal-login__pic">
+                <svg class="modal-login__icon" width="45" height="38">
+                  <use xlink:href="img/sprite.svg#file"></use>
+                </svg>
+              </div>
+              <div class="modal-login__content">
+                <h3 class="modal-login__title">Файлообмінник</h3>
+                <p class="modal-login__descr">Вхід до файлообміннику</p>
+              </div></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+    </body>
+</html>

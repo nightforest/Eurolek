@@ -1,0 +1,45 @@
+.invite-section
+    padding: 65px 0 100px
+
+    @media ($max-md)
+        padding: 40px 0
+
+    &__title
+        margin-bottom: 15px
+
+        @media ($max-md)
+            text-align: center
+    
+    &__descr
+        font-size: 18px
+        margin-bottom: 25px
+
+        @media ($max-md)
+            font-size: 14px
+            margin-bottom: 15px
+
+        p
+            margin: 0
+
+    &__info
+        font-size: 22px
+        font-weight: 700
+        margin-bottom: 35px
+
+        @media ($max-md)
+            font-size: 14px
+            margin-bottom: 25px
+
+        p
+            margin: 0
+        
+        a
+            color: var(--green)
+            border-bottom: 1px solid var(--green)
+            transition: all .5s ease
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--blue)
+                border-color: transparent

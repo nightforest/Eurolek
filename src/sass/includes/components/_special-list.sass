@@ -1,0 +1,26 @@
+.special-list
+    margin: 0 0 20px
+    padding: 0
+    list-style: none
+
+    &__item
+        border: 1px solid var(--white)
+        padding: 12px 30px 12px 15px
+        color: var(--white)
+        font-size: 18px
+        line-height: 1.2
+        background: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.40594 7.17443L0.246291 2.01461C-0.0820945 1.68638 -0.0820945 1.15422 0.246291 0.826148C0.574384 0.498054 1.10652 0.498054 1.43459 0.826148L6.00009 5.39179L10.5654 0.826281C10.8937 0.498187 11.4257 0.498187 11.7538 0.826281C12.0821 1.15438 12.0821 1.68651 11.7538 2.01474L6.5941 7.17456C6.42998 7.33861 6.2151 7.42054 6.00011 7.42054C5.78502 7.42054 5.56999 7.33845 5.40594 7.17443Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat right 10px center
+
+        @media ($max-md)
+            font-size: 14px
+            padding: 8px 30px 8px 10px
+
+        &:not(:last-child)
+            margin-bottom: 5px
+
+    &--black
+
+        .special-list__item
+            border-color: var(--blue)
+            color: var(--black)
+            background: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.40594 7.17443L0.246291 2.01461C-0.0820945 1.68638 -0.0820945 1.15422 0.246291 0.826148C0.574384 0.498054 1.10652 0.498054 1.43459 0.826148L6.00009 5.39179L10.5654 0.826281C10.8937 0.498187 11.4257 0.498187 11.7538 0.826281C12.0821 1.15438 12.0821 1.68651 11.7538 2.01474L6.5941 7.17456C6.42998 7.33861 6.2151 7.42054 6.00011 7.42054C5.78502 7.42054 5.56999 7.33845 5.40594 7.17443Z' fill='%230099DB'/%3E%3C/svg%3E%0A") no-repeat right 10px center

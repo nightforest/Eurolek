@@ -1,0 +1,66 @@
+.button
+    position: relative
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    gap: 10px
+    text-align: center
+    width: auto
+    min-width: 245px
+    height: 50px
+    margin: 0
+    border: none
+    padding: 5px 30px
+    box-sizing: border-box
+    -webkit-tap-highlight-color: transparent
+    outline: none
+    cursor: pointer
+    user-select: none
+    vertical-align: middle
+    appearance: none
+    text-decoration: none
+    font-weight: 600
+    font-size: 15px
+    line-height: 1.2
+    letter-spacing: 0
+    border-radius: 0
+    background: var(--blue)
+    color: var(--white)
+    box-shadow: none
+    transition: all .5s ease
+
+    @media ($max-md)
+        height: 54px
+        font-size: 14px
+
+    &__icon
+        margin-left: auto
+
+    &:hover
+        outline: none
+        background: var(--green)
+        color: var(--white)
+
+    &:active
+        outline: none
+        background: var(--green)
+        color: var(--white)
+
+    &:focus-visible
+        outline: none
+        background: var(--green)
+        color: var(--white)
+
+    &:disabled
+        background: var(--grey-disabled) !important
+        border-color: var(--grey-disabled) !important
+        color: var(--grey) !important
+        cursor: not-allowed
+
+    &--green
+        background: var(--green)
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            background: var(--blue-hover)

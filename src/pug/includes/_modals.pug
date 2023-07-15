@@ -1,0 +1,43 @@
+.modal-wrap
+    #modal-login.modal
+        .modal__inner
+            .modal__window
+                button.modal__close(aria-label="Close modal" data-modal-close type="button")
+                    svg.modal__close-icon(width="28" height="29")
+                        use(xlink:href="img/sprite.svg#close-modal")
+                
+                h3.modal__title Вхід для співробітників
+                .modal__descr
+                    p Після вибору сервісу авторизуйтесь в системі.
+                    p Сервіс доступний тільки для співробітників компанії
+
+                ul.modal-login
+                    li.modal-login__item
+                        a.modal-login__link(href="#") 
+                            .modal-login__pic
+                                svg.modal-login__icon(width="47" height="37")
+                                    use(xlink:href="img/sprite.svg#email")
+                            
+                            .modal-login__content
+                                h3.modal-login__title Пошта Roundcube
+                                p.modal-login__descr Вхід до поштового сервісу Roundcube
+                    
+                    li.modal-login__item
+                        a.modal-login__link(href="#") 
+                            .modal-login__pic
+                                svg.modal-login__icon(width="47" height="37")
+                                    use(xlink:href="img/sprite.svg#email")
+                            
+                            .modal-login__content
+                                h3.modal-login__title Пошта RainLoop
+                                p.modal-login__descr Вхід до поштового сервісу RainLoop
+                    
+                    li.modal-login__item
+                        a.modal-login__link(href="#") 
+                            .modal-login__pic
+                                svg.modal-login__icon(width="45" height="38")
+                                    use(xlink:href="img/sprite.svg#file")
+                            
+                            .modal-login__content
+                                h3.modal-login__title Файлообмінник
+                                p.modal-login__descr Вхід до файлообміннику

@@ -1,0 +1,43 @@
+section.feedback-section.feedback-section--grey
+    .container
+        nav.breadcrumbs.animation-down(aria-label="breadcrumb")
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#") Головна
+                li.breadcrumbs__item(aria-current="page") Контакти
+
+        h2.section-title.feedback-section__title.animation-down Контакти
+
+    .container.feedback-section__container
+        .feedback-section__left.animation-down
+            form.form.form--black(id="form" autocomplete="off" novalidate="novalidate")
+                h2.section-title.form__title Зв'язатися з нами
+                p.form__descr Ми завжди раді зворотньому зв’язку
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1387.2319097717084!2d30.85234576952149!3d50.381572897048784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4e802be9b4077%3A0x44c173a0de5eac84!2sBoryspilska%20St%2C%207%2C%20Hora%2C%20Kyivs&#39;ka%20oblast%2C%2008324!5e0!3m2!1sen!2sua!4v1688812608413!5m2!1sen!2sua" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" class="feedback-section__map feedback-section__map--visible-md" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                .form__row
+                    .form__group.form__group--6
+                        input#inputName.input.form__input(type="text" name="inputFirstName" placeholder="" autocomplete="off" required)
+                        label.form__placeholder Ім'я *
+                    
+                    .form__group.form__group--6
+                        input#inputPhone.input.form__input.tell-input(type="text" name="inputPhone" placeholder="" autocomplete="off" required)
+
+                .form__group
+                    input#inputEmail.input.form__input(type="text" name="inputEmail" placeholder="" autocomplete="off" required)
+                    label.form__placeholder Пошта *
+
+                .form__group
+                    textarea#textarea.textarea.form__input(name="message" rows="3" autocomplete="off" required)
+                    label.form__placeholder Коментар
+
+                .form__group.form__group--mb-30
+                    p.form__agree Згоден з умовами 
+                        a(href="#") політики конфіденційності
+
+                .form__button-group
+                    button.button.button--green.form__button Надіслати
+        
+        .feedback-section__right.animation-fade
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1387.2319097717084!2d30.85234576952149!3d50.381572897048784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4e802be9b4077%3A0x44c173a0de5eac84!2sBoryspilska%20St%2C%207%2C%20Hora%2C%20Kyivs&#39;ka%20oblast%2C%2008324!5e0!3m2!1sen!2sua!4v1688812608413!5m2!1sen!2sua" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" class="feedback-section__map feedback-section__map--hidden-md" referrerpolicy="no-referrer-when-downgrade"></iframe>

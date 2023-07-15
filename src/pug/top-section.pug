@@ -1,0 +1,19 @@
+section.top-section
+    .container.top-section__container
+        .video.top-section__video
+            video.video__content(playsinline='' autoplay='' muted='' loop='')
+                source(src='video/video.mp4', type='video/mp4')
+                //- source(src='video/city.ogv', type='video/ogg')
+                source(src='video/video.webm', type='video/webm')
+
+        .top-section__content
+            h1.top-section__title.animation-down Сучасні 
+                span.blue-color лікарські засоби
+            p.top-section__slogan.animation-down(data-delay="0.2") та медичні вироби європейсьских виробників
+
+            .top-section__buttons.animation-down(data-delay="0.4")
+                a.button.top-section__button(href="#") Перейти до продукції
+                
+                a.top-section__scroll-down(href="#categories-section" aria-label="Scroll down" data-scroll)
+                    svg(width="30" height="12")
+                        use(xlink:href="img/sprite.svg#scroll-down")

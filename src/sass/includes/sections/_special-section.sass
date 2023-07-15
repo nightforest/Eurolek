@@ -1,0 +1,75 @@
+.special-section
+    position: relative
+    padding: 55px 0 80px
+    background: var(--blue)
+    z-index: $z-index-0
+
+    @media ($max-md)
+        padding: 45px 0 0
+
+    &:before
+        position: absolute
+        top: 0
+        right: 0
+        width: 50%
+        height: 100%
+        background: linear-gradient(to bottom, rgba(255, 255, 255, .2), transparent)
+        content: ""
+        z-index: $z-index-minus
+
+        @media ($max-md)
+            display: none
+
+    &__container
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        gap: 50px
+
+        @media ($max-md)
+            display: flex
+            flex-direction: column
+            gap: 15px
+
+    &__left
+        grid-column: 6 span
+
+    &__right
+        position: relative
+        grid-column: 6 span
+
+        @media ($max-md)
+            padding: 20px 0
+
+            &:before
+                position: absolute
+                top: 0
+                right: -15px
+                width: calc(100% + 30px)
+                height: 100%
+                background: linear-gradient(to bottom, rgba(255, 255, 255, .2), transparent)
+                content: ""
+                z-index: $z-index-minus
+
+    &__title
+        color: var(--white)
+        margin-bottom: 20px
+
+        @media ($max-md)
+            text-align: center
+
+    &__info
+        margin-bottom: 10px
+
+        @media ($max-md)
+            width: 30px
+            height: 30px
+            margin-bottom: 5px
+
+    &__text
+        color: var(--white)
+
+        @media ($max-md)
+            font-size: 14px
+
+        p
+            margin: 0

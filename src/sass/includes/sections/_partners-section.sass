@@ -1,0 +1,36 @@
+.partners-section
+    padding: 45px 0 100px
+
+    @media ($max-md)
+        padding: 15px 0 45px
+
+    &__title
+        margin-bottom: 45px
+
+        @media ($max-md)
+            margin-bottom: 15px
+            text-align: center
+
+    &--grey
+        position: relative
+        padding: 55px 0 60px
+        background: linear-gradient(to bottom, #e6e6e6, #fff)
+        z-index: $z-index-0
+
+        @media ($max-md)
+            padding: 25px 0 30px
+
+        &:before
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: url(../img/top-section-bg.svg) no-repeat left top, url(../img/stars-right-blue.svg) no-repeat right bottom
+            opacity: .05
+            content: ""
+            z-index: $z-index-minus
+
+            @media ($max-md)
+                background: url(../img/top-section-bg.svg) no-repeat left top
+                background-size: contain

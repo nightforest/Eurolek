@@ -1,0 +1,251 @@
+section.catalog-section
+    .container.catalog-section__container
+        nav.breadcrumbs.animation-down(aria-label="breadcrumb")
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#") Головна
+                li.breadcrumbs__item(aria-current="page") Продукція
+
+        h2.section-title.catalog-section__title.animation-down Продукція
+
+    .swiper.categories-slider.catalog-section__categories-slider.animation-down
+        .swiper-wrapper
+            .swiper-slide.categories-slider__slide
+                a.category-card(href="#")
+                    picture.category-card__picture
+                        img.category-card__img(src="img/category-img-1.webp" srcset="img/category-img-1@2x.webp 2x" loading="lazy" width="270" height="377"  alt="alt")
+                    
+                    .category-card__content
+                        h3.category-card__title Вітамини
+                        .category-card__count 8 продуктів
+                        .category-card__more Детальніше
+                            svg.category-card__more-icon(width="7" height="11")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+            
+            .swiper-slide.categories-slider__slide
+                a.category-card(href="#")
+                    picture.category-card__picture
+                        img.category-card__img(src="img/category-img-2.webp" srcset="img/category-img-2@2x.webp 2x" loading="lazy" width="270" height="377"  alt="alt")
+                    
+                    .category-card__content
+                        h3.category-card__title Безрецептурні
+                        .category-card__count 16 продуктів
+                        .category-card__more Детальніше
+                            svg.category-card__more-icon(width="7" height="11")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+            
+            .swiper-slide.categories-slider__slide
+                a.category-card(href="#")
+                    picture.category-card__picture
+                        img.category-card__img(src="img/category-img-3.webp" srcset="img/category-img-3@2x.webp 2x" loading="lazy" width="270" height="377"  alt="alt")
+                    
+                    .category-card__content
+                        h3.category-card__title Рецептурні
+                        .category-card__count 24 продуктів
+                        .category-card__more Детальніше
+                            svg.category-card__more-icon(width="7" height="11")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+            
+            .swiper-slide.categories-slider__slide
+                a.category-card(href="#")
+                    picture.category-card__picture
+                        img.category-card__img(src="img/category-img-4.webp" srcset="img/category-img-4@2x.webp 2x" loading="lazy" width="270" height="377"  alt="alt")
+                    
+                    .category-card__content
+                        h3.category-card__title Дієтичні добавки
+                        .category-card__count 8 продуктів
+                        .category-card__more Детальніше
+                            svg.category-card__more-icon(width="7" height="11")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+            
+            .swiper-slide.categories-slider__slide
+                a.category-card(href="#")
+                    picture.category-card__picture
+                        img.category-card__img(src="img/category-img-5.webp" srcset="img/category-img-5@2x.webp 2x" loading="lazy" width="270" height="377"  alt="alt")
+                    
+                    .category-card__content
+                        h3.category-card__title Інші групи
+                        .category-card__count 16 продуктів
+                        .category-card__more Детальніше
+                            svg.category-card__more-icon(width="7" height="11")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+            
+            .swiper-slide.categories-slider__slide
+                a.category-card(href="#")
+                    picture.category-card__picture
+                        img.category-card__img(src="img/category-img-6.webp" srcset="img/category-img-6@2x.webp 2x" loading="lazy" width="270" height="377"  alt="alt")
+                    
+                    .category-card__content
+                        h3.category-card__title Кардіолгія
+                        .category-card__count 24 продуктів
+                        .category-card__more Детальніше
+                            svg.category-card__more-icon(width="7" height="11")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+
+        .swiper-scrollbar.categories-slider__scrollbar
+    
+    .container.catalog-section__container
+        .catalog-section__filter
+            form.catalog-search.animation-down
+                input.catalog-search__input(type="text" name="catalogSearchInput" placeholder="Введіть назву препарату" autocomplete="off" required)
+                button.catalog-search__button(type="button" aria-label="Search")
+                    svg.catalog-search__icon(width="18" height="18")
+                        use(xlink:href="img/sprite.svg#search")
+            
+            ul.letters-list.animation-down
+                li.letters-list__item
+                    button.letters-list__button.is-active(type="button") А
+                li.letters-list__item
+                    button.letters-list__button(type="button") Б 
+                li.letters-list__item
+                    button.letters-list__button(type="button") В
+                li.letters-list__item
+                    button.letters-list__button(type="button") Г
+                li.letters-list__item
+                    button.letters-list__button(type="button") Ґ
+                li.letters-list__item
+                    button.letters-list__button(type="button") Д
+                li.letters-list__item
+                    button.letters-list__button(type="button") Е
+                li.letters-list__item
+                    button.letters-list__button(type="button") Є
+                li.letters-list__item
+                    button.letters-list__button(type="button") Ж
+                li.letters-list__item
+                    button.letters-list__button(type="button") З
+                li.letters-list__item
+                    button.letters-list__button(type="button") И
+                li.letters-list__item
+                    button.letters-list__button(type="button") І
+                li.letters-list__item
+                    button.letters-list__button(type="button") Ї
+                li.letters-list__item
+                    button.letters-list__button(type="button") Й
+                li.letters-list__item
+                    button.letters-list__button(type="button") К
+                li.letters-list__item
+                    button.letters-list__button(type="button") Л
+                li.letters-list__item
+                    button.letters-list__button(type="button") М
+                li.letters-list__item
+                    button.letters-list__button(type="button") Н
+                li.letters-list__item
+                    button.letters-list__button(type="button") О
+                li.letters-list__item
+                    button.letters-list__button(type="button") П
+                li.letters-list__item
+                    button.letters-list__button(type="button") Р
+                li.letters-list__item
+                    button.letters-list__button(type="button") С
+                li.letters-list__item
+                    button.letters-list__button(type="button") Т
+                li.letters-list__item
+                    button.letters-list__button(type="button") У
+                li.letters-list__item
+                    button.letters-list__button(type="button") Ф
+                li.letters-list__item
+                    button.letters-list__button(type="button") Х
+                li.letters-list__item
+                    button.letters-list__button(type="button") Ц
+                li.letters-list__item
+                    button.letters-list__button(type="button") Ч
+                li.letters-list__item
+                    button.letters-list__button(type="button") Ш
+                li.letters-list__item
+                    button.letters-list__button(type="button") Щ
+                li.letters-list__item
+                    button.letters-list__button(type="button") Ю
+                li.letters-list__item
+                    button.letters-list__button(type="button") Я
+        
+        ul.catalog-section__list
+            li.catalog-section__item.animation-down
+                a.product-card(href="#")
+                    picture.product-card__picture
+                        img.product-card__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="320" height="259"  alt="alt")
+                    
+                    .product-card__content
+                        h3.product-card__title Цетло Плюс
+                        p.product-card__descr Ми з гордістю дивимось у минуле, коли фармацевти аптеки проклали нам шлях.
+                        .product-card__more Детальніше
+                            svg.product-card__more-icon(width="7" height="11")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+            
+            li.catalog-section__item.animation-down
+                a.product-card(href="#")
+                    picture.product-card__picture
+                        img.product-card__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="320" height="259"  alt="alt")
+                    
+                    .product-card__content
+                        h3.product-card__title Цетло Плюс
+                        p.product-card__descr Ми з гордістю дивимось у минуле, коли фармацевти аптеки проклали нам шлях.
+                        .product-card__more Детальніше
+                            svg.product-card__more-icon(width="7" height="11")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+
+            li.catalog-section__item.animation-down
+                a.product-card(href="#")
+                    picture.product-card__picture
+                        img.product-card__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="320" height="259"  alt="alt")
+                    
+                    .product-card__content
+                        h3.product-card__title Цетло Плюс
+                        p.product-card__descr Ми з гордістю дивимось у минуле, коли фармацевти аптеки проклали нам шлях.
+                        .product-card__more Детальніше
+                            svg.product-card__more-icon(width="7" height="11")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+            
+            li.catalog-section__item.animation-down
+                a.product-card(href="#")
+                    picture.product-card__picture
+                        img.product-card__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="320" height="259"  alt="alt")
+                    
+                    .product-card__content
+                        h3.product-card__title Цетло Плюс
+                        p.product-card__descr Ми з гордістю дивимось у минуле, коли фармацевти аптеки проклали нам шлях.
+                        .product-card__more Детальніше
+                            svg.product-card__more-icon(width="7" height="11")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+            
+            li.catalog-section__item.animation-down
+                a.product-card(href="#")
+                    picture.product-card__picture
+                        img.product-card__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="320" height="259"  alt="alt")
+                    
+                    .product-card__content
+                        h3.product-card__title Цетло Плюс
+                        p.product-card__descr Ми з гордістю дивимось у минуле, коли фармацевти аптеки проклали нам шлях.
+                        .product-card__more Детальніше
+                            svg.product-card__more-icon(width="7" height="11")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+            
+            li.catalog-section__item.animation-down
+                a.product-card(href="#")
+                    picture.product-card__picture
+                        img.product-card__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="320" height="259"  alt="alt")
+                    
+                    .product-card__content
+                        h3.product-card__title Цетло Плюс
+                        p.product-card__descr Ми з гордістю дивимось у минуле, коли фармацевти аптеки проклали нам шлях.
+                        .product-card__more Детальніше
+                            svg.product-card__more-icon(width="7" height="11")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+        
+        nav.pagenav.catalog-article__pagenav(aria-label="Page navigation")
+            ul.pagenav__list
+                li.pagenav__item
+                    a.pagenav__arrow(href="#" aria-label="Previous")
+                        svg.pagenav__icon(width="12" height="20")
+                            use(xlink:href="img/sprite.svg#arrow-left")
+                li.pagenav__item.is-active(aria-current="page")
+                    a.pagenav__link(href="#") 1
+                li.pagenav__item
+                    a.pagenav__link(href="#") 2
+                li.pagenav__item
+                    span ...
+                li.pagenav__item
+                    a.pagenav__link(href="#") 7
+                li.pagenav__item
+                    a.pagenav__arrow(href="#" aria-label="Next")
+                        svg.pagenav__icon(width="12" height="20")
+                            use(xlink:href="img/sprite.svg#arrow-right") 

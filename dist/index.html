@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <!--base(href="/")-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Title -->
+        <title>Main Page</title>
+        <!-- SEO Meta -->
+        <meta name="description" content="GreenBazar description">
+        <meta name="keywords" content="greenbazar">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+      <script type="module" crossorigin src="/assets/main-7e27c473.js"></script>
+      <link rel="stylesheet" href="/assets/main-5b3b9297.css">
+    </head>
+    <body>
+        <!-- Header -->
+        
+<header class="header">
+  <div class="container header__container">
+    <div class="logo header__logo"><a class="logo__link" href="#" aria-label="logo"><img class="logo__img" src="img/logo.svg" width="132" height="74" alt="logo"/></a></div>
+    <nav class="menu header__menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link is-active" href="#">Продукція</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Послуги</a></li>
+        <li class="menu__item is-dropdown"><a class="menu__link is-dropdown__toggle" href="#">Про компанію
+            <svg class="menu__arrow" width="12" height="8">
+              <use xlink:href="img/sprite.svg#arrow-down"></use>
+            </svg></a>
+          <ul class="menu__sub is-dropdown__menu">
+            <li class="menu__sub-item"><a class="menu__sub-link" href="#">Про нас</a></li>
+            <li class="menu__sub-item"><a class="menu__sub-link" href="#">Каталог (PDF)</a></li>
+            <li class="menu__sub-item"><a class="menu__sub-link" href="#" data-modal="modal-login">Вхід для співробітників</a></li>
+          </ul>
+        </li>
+        <li class="menu__item"><a class="menu__link" href="#">Фармаконагляд</a></li>
+      </ul>
+    </nav><a class="header__phone" href="tel:+380442332557">
+      <svg class="header__phone-icon" width="16" height="16">
+        <use xlink:href="img/sprite.svg#phone"></use>
+      </svg><span>(044) 233 25 57</span></a>
+    <nav class="actions header__actions">
+      <ul class="actions__list">
+        <li class="actions__item actions__item--visible-xl">
+          <button class="actions__button" type="button" aria-label="Show phone">
+            <svg class="actions__icon" width="25" height="25">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+          </button>
+          <div class="actions__phone actions__dropdown"><a class="actions__phone-link" href="tel:+380442332557">(044) 233 25 57</a></div>
+        </li>
+        <li class="actions__item">
+          <button class="actions__button" type="button" aria-label="Show work time">
+            <svg class="actions__icon" width="27" height="26">
+              <use xlink:href="img/sprite.svg#clock"></use>
+            </svg>
+          </button>
+          <div class="work-time actions__dropdown">
+            <svg class="work-time__icon" width="47" height="46">
+              <use xlink:href="img/sprite.svg#clock"></use>
+            </svg>
+            <h3 class="work-time__title">Графік роботи</h3>
+            <div class="work-time__text">
+              <p>ПН-ЧТ: 9.00-18.00</p>
+              <p>ПТ: 9.00-17.30</p>
+              <p>CБ-ВС: Вихідний</p>
+            </div>
+          </div>
+        </li>
+        <li class="actions__item">
+          <button class="actions__button" type="button" aria-label="Show search">
+            <svg class="actions__icon" width="25" height="25">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <form class="search-form actions__dropdown">
+            <input class="search-form__input" type="text" name="searchFormInput" placeholder="" autocomplete="off" required="required"/>
+            <button class="search-form__button" type="button" aria-label="Search">
+              <svg class="search-form__icon" width="25" height="25">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+    <div class="lang header__lang">
+      <button class="lang__toggle" type="button" aria-label="Choose language">UA
+        <svg class="lang__toggle-icon" width="12" height="8">
+          <use xlink:href="img/sprite.svg#arrow-down"></use>
+        </svg>
+      </button>
+      <ul class="lang__dropdown">
+        <li class="lang__item"><a class="lang__link" href="#">EN</a></li>
+        <li class="lang__item"><a class="lang__link" href="#">GR</a></li>
+      </ul>
+    </div>
+    <button class="burger header__right-menu" type="button" aria-label="Open right menu" aria-expanded="false" data-right-toggle="data-right-toggle">
+      <div class="burger__line"></div>
+      <div class="burger__line"></div>
+      <div class="burger__line"></div>
+    </button>
+    <button class="burger header__mobile-menu" type="button" aria-label="Open mobile menu" aria-expanded="false" data-nav-toggle="data-nav-toggle">
+      <div class="burger__line"></div>
+      <div class="burger__line"></div>
+      <div class="burger__line"></div>
+    </button>
+  </div>
+</header>
+
+        <!-- Main -->
+        <main id="main" class="main">
+            
+<section class="top-section">
+  <div class="container top-section__container">
+    <div class="video top-section__video">
+      <video class="video__content" playsinline="" autoplay="" muted="" loop="">
+        <source src="video/video.mp4" type="video/mp4"/>
+        <source src="video/video.webm" type="video/webm"/>
+      </video>
+    </div>
+    <div class="top-section__content">
+      <h1 class="top-section__title animation-down">Сучасні <span class="blue-color">лікарські засоби</span></h1>
+      <p class="top-section__slogan animation-down" data-delay="0.2">та медичні вироби європейсьских виробників</p>
+      <div class="top-section__buttons animation-down" data-delay="0.4"><a class="button top-section__button" href="#">Перейти до продукції</a><a class="top-section__scroll-down" href="#categories-section" aria-label="Scroll down" data-scroll="data-scroll">
+          <svg width="30" height="12">
+            <use xlink:href="img/sprite.svg#scroll-down"></use>
+          </svg></a></div>
+    </div>
+  </div>
+</section>
+            
+<section class="categories-section" id="categories-section">
+  <div class="container categories-section__container">
+    <h2 class="section-title categories-section__title animation-down">Категорії товарів</h2>
+  </div>
+  <div class="swiper categories-slider animation-down">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide categories-slider__slide"><a class="category-card" href="#">
+          <picture class="category-card__picture"><img class="category-card__img" src="img/category-img-1.webp" srcset="img/category-img-1@2x.webp 2x" loading="lazy" width="270" height="377" alt="alt"/></picture>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Вітамини</h3>
+            <div class="category-card__count">8 продуктів</div>
+            <div class="category-card__more">Детальніше
+              <svg class="category-card__more-icon" width="7" height="11">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </div>
+          </div></a></div>
+      <div class="swiper-slide categories-slider__slide"><a class="category-card" href="#">
+          <picture class="category-card__picture"><img class="category-card__img" src="img/category-img-2.webp" srcset="img/category-img-2@2x.webp 2x" loading="lazy" width="270" height="377" alt="alt"/></picture>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Безрецептурні</h3>
+            <div class="category-card__count">16 продуктів</div>
+            <div class="category-card__more">Детальніше
+              <svg class="category-card__more-icon" width="7" height="11">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </div>
+          </div></a></div>
+      <div class="swiper-slide categories-slider__slide"><a class="category-card" href="#">
+          <picture class="category-card__picture"><img class="category-card__img" src="img/category-img-3.webp" srcset="img/category-img-3@2x.webp 2x" loading="lazy" width="270" height="377" alt="alt"/></picture>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Рецептурні</h3>
+            <div class="category-card__count">24 продуктів</div>
+            <div class="category-card__more">Детальніше
+              <svg class="category-card__more-icon" width="7" height="11">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </div>
+          </div></a></div>
+      <div class="swiper-slide categories-slider__slide"><a class="category-card" href="#">
+          <picture class="category-card__picture"><img class="category-card__img" src="img/category-img-4.webp" srcset="img/category-img-4@2x.webp 2x" loading="lazy" width="270" height="377" alt="alt"/></picture>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Дієтичні добавки</h3>
+            <div class="category-card__count">8 продуктів</div>
+            <div class="category-card__more">Детальніше
+              <svg class="category-card__more-icon" width="7" height="11">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </div>
+          </div></a></div>
+      <div class="swiper-slide categories-slider__slide"><a class="category-card" href="#">
+          <picture class="category-card__picture"><img class="category-card__img" src="img/category-img-5.webp" srcset="img/category-img-5@2x.webp 2x" loading="lazy" width="270" height="377" alt="alt"/></picture>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Інші групи</h3>
+            <div class="category-card__count">16 продуктів</div>
+            <div class="category-card__more">Детальніше
+              <svg class="category-card__more-icon" width="7" height="11">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </div>
+          </div></a></div>
+      <div class="swiper-slide categories-slider__slide"><a class="category-card" href="#">
+          <picture class="category-card__picture"><img class="category-card__img" src="img/category-img-6.webp" srcset="img/category-img-6@2x.webp 2x" loading="lazy" width="270" height="377" alt="alt"/></picture>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Кардіолгія</h3>
+            <div class="category-card__count">24 продуктів</div>
+            <div class="category-card__more">Детальніше
+              <svg class="category-card__more-icon" width="7" height="11">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </div>
+          </div></a></div>
+    </div>
+    <div class="swiper-scrollbar categories-slider__scrollbar"></div>
+  </div>
+</section>
+            
+<section class="about-section">
+  <div class="container about-section__container">
+    <div class="about-section__left animation-down">
+      <h2 class="section-title about-section__title">Про компанію</h2>
+      <div class="about-section__text">
+        <p>Компанія ТОВ «ЕВРОЛЕК-УКРАЇНА» планує подальше розширення своєї присутності в регіонах. </p>
+        <p>У зв’язку з цим триває набір медичних представників у багатьох містах України. Відправляйте своє резюме на електронну адресу: <a href="mailto:info@eurolek.com.ua">info@eurolek.com.ua</a></p>
+      </div><a class="button about-section__button" href="#">Детальніше</a>
+    </div>
+    <div class="about-section__right">
+      <div class="about-block">
+        <picture class="about-block__picture"><img class="about-block__img" src="img/about-img.webp" srcset="img/about-img@2x.webp 2x" loading="lazy" width="753" height="499" alt="alt"/></picture>
+        <ul class="about-block__list">
+          <li class="about-block__item animation-down">
+            <div class="about-block__pic">
+              <svg class="about-block__icon" width="81" height="79">
+                <use xlink:href="img/sprite.svg#about-1"></use>
+              </svg>
+            </div>
+            <h3 class="about-block__title">Екологічність</h3>
+          </li>
+          <li class="about-block__item animation-down">
+            <div class="about-block__pic">
+              <svg class="about-block__icon" width="70" height="81">
+                <use xlink:href="img/sprite.svg#about-2"></use>
+              </svg>
+            </div>
+            <h3 class="about-block__title">Гнучкість та мобільність</h3>
+          </li>
+          <li class="about-block__item animation-down">
+            <div class="about-block__pic">
+              <svg class="about-block__icon" width="77" height="60">
+                <use xlink:href="img/sprite.svg#about-3"></use>
+              </svg>
+            </div>
+            <h3 class="about-block__title">Висока якість</h3>
+          </li>
+          <li class="about-block__item animation-down">
+            <div class="about-block__pic">
+              <svg class="about-block__icon" width="68" height="67">
+                <use xlink:href="img/sprite.svg#about-4"></use>
+              </svg>
+            </div>
+            <h3 class="about-block__title">Індивідуальність</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+            
+<section class="expertise-section">
+  <div class="container expertise-section__container">
+    <h2 class="section-title expertise-section__title">Експертиза</h2>
+  </div>
+  <ul class="expertise-section__list">
+    <li class="expertise-section__item">
+      <div class="expertise-card">
+        <picture class="expertise-card__picture animation-fade"><img class="expertise-card__img" src="img/expertise-img-1.webp" srcset="img/expertise-img-1@2x.webp 2x" loading="lazy" width="960" height="377" alt="alt"/></picture>
+        <div class="expertise-card__content">
+          <div class="expertise-card__inner animation-right">
+            <h3 class="expertise-card__title">Вчора</h3>
+            <p class="expertise-card__descr">Ми з гордістю дивимось у минуле, коли фармацевти аптеки проклали нам шлях.</p>
+            <div class="expertise-card__number">01</div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="expertise-section__item">
+      <div class="expertise-card expertise-card--reverse">
+        <picture class="expertise-card__picture animation-fade"><img class="expertise-card__img" src="img/expertise-img-2.webp" srcset="img/expertise-img-2@2x.webp 2x" loading="lazy" width="960" height="377" alt="alt"/></picture>
+        <div class="expertise-card__content">
+          <div class="expertise-card__inner animation-left">
+            <h3 class="expertise-card__title">Вчора</h3>
+            <p class="expertise-card__descr">Ми з гордістю дивимось у минуле, коли фармацевти аптеки проклали нам шлях.</p>
+            <div class="expertise-card__number">02</div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="expertise-section__item">
+      <div class="expertise-card">
+        <picture class="expertise-card__picture animation-fade"><img class="expertise-card__img" src="img/expertise-img-3.webp" srcset="img/expertise-img-3@2x.webp 2x" loading="lazy" width="960" height="377" alt="alt"/></picture>
+        <div class="expertise-card__content">
+          <div class="expertise-card__inner animation-right">
+            <h3 class="expertise-card__title">Вчора</h3>
+            <p class="expertise-card__descr">Ми з гордістю дивимось у минуле, коли фармацевти аптеки проклали нам шлях.</p>
+            <div class="expertise-card__number">03</div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="expertise-section__item">
+      <div class="expertise-card expertise-card--reverse">
+        <picture class="expertise-card__picture animation-fade"><img class="expertise-card__img" src="img/expertise-img-4.webp" srcset="img/expertise-img-4@2x.webp 2x" loading="lazy" width="960" height="377" alt="alt"/></picture>
+        <div class="expertise-card__content">
+          <div class="expertise-card__inner animation-left">
+            <h3 class="expertise-card__title">Вчора</h3>
+            <p class="expertise-card__descr">Ми з гордістю дивимось у минуле, коли фармацевти аптеки проклали нам шлях.</p>
+            <div class="expertise-card__number">04</div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+            
+<section class="partners-section">
+  <div class="container partners-section__container">
+    <h2 class="section-title partners-section__title animation-down">Партнери</h2>
+  </div>
+  <ul class="partners-list">
+    <li class="partners-list__item animation-down">
+      <picture class="partners-list__picture"><img class="partners-list__img" src="img/partners/partner-1.webp" srcset="img/partners/partner-1@2x.webp 2x" loading="lazy" width="260" height="100" alt="alt"/></picture>
+      <h3 class="partners-list__title">FARMINA SP. Z O.O., Польща</h3>
+    </li>
+    <li class="partners-list__item animation-down">
+      <picture class="partners-list__picture"><img class="partners-list__img" src="img/partners/partner-2.webp" srcset="img/partners/partner-2@2x.webp 2x" loading="lazy" width="260" height="100" alt="alt"/></picture>
+      <h3 class="partners-list__title">PHARMACY LABORATORIES S.C., Польща</h3>
+    </li>
+    <li class="partners-list__item animation-down">
+      <picture class="partners-list__picture"><img class="partners-list__img" src="img/partners/partner-3.webp" srcset="img/partners/partner-3@2x.webp 2x" loading="lazy" width="260" height="100" alt="alt"/></picture>
+      <h3 class="partners-list__title">LABORELL SP. Z O.O. SP.K., Польща</h3>
+    </li>
+    <li class="partners-list__item animation-down">
+      <picture class="partners-list__picture"><img class="partners-list__img" src="img/partners/partner-4.webp" srcset="img/partners/partner-4@2x.webp 2x" loading="lazy" width="260" height="100" alt="alt"/></picture>
+      <h3 class="partners-list__title">FARMA-DERMA S.R.L., Італія</h3>
+    </li>
+    <li class="partners-list__item animation-down">
+      <picture class="partners-list__picture"><img class="partners-list__img" src="img/partners/partner-5.webp" srcset="img/partners/partner-5@2x.webp 2x" loading="lazy" width="260" height="100" alt="alt"/></picture>
+      <h3 class="partners-list__title">LABORATORIO CHIMICO FARMACEUTICO “A. SELLA” S.R.L., Італія</h3>
+    </li>
+    <li class="partners-list__item animation-down">
+      <picture class="partners-list__picture"><img class="partners-list__img" src="img/partners/partner-6.webp" srcset="img/partners/partner-6@2x.webp 2x" loading="lazy" width="260" height="100" alt="alt"/></picture>
+      <h3 class="partners-list__title">FIDIA FARMACEUTICI S.P.A., Італія</h3>
+    </li>
+    <li class="partners-list__item animation-down">
+      <picture class="partners-list__picture"><img class="partners-list__img" src="img/partners/partner-7.webp" srcset="img/partners/partner-7@2x.webp 2x" loading="lazy" width="260" height="100" alt="alt"/></picture>
+      <h3 class="partners-list__title">FASTMEDITALIA S.R.L, Італія</h3>
+    </li>
+    <li class="partners-list__item animation-down">
+      <picture class="partners-list__picture"><img class="partners-list__img" src="img/partners/partner-8.webp" srcset="img/partners/partner-8@2x.webp 2x" loading="lazy" width="260" height="100" alt="alt"/></picture>
+      <h3 class="partners-list__title">EURORESEARCH S.R.L, Італія</h3>
+    </li>
+    <li class="partners-list__item animation-down">
+      <picture class="partners-list__picture"><img class="partners-list__img" src="img/partners/partner-9.webp" srcset="img/partners/partner-9@2x.webp 2x" loading="lazy" width="260" height="100" alt="alt"/></picture>
+      <h3 class="partners-list__title">SPREEWÄLDER ARZNEIMITTEL GMBH, Німеччина</h3>
+    </li>
+    <li class="partners-list__item animation-down">
+      <picture class="partners-list__picture"><img class="partners-list__img" src="img/partners/partner-10.webp" srcset="img/partners/partner-10@2x.webp 2x" loading="lazy" width="260" height="100" alt="alt"/></picture>
+      <h3 class="partners-list__title">CYDONIA D.O.O., Боснія і Герцеговина</h3>
+    </li>
+    <li class="partners-list__item animation-down">
+      <picture class="partners-list__picture"><img class="partners-list__img" src="img/partners/partner-11.webp" srcset="img/partners/partner-11@2x.webp 2x" loading="lazy" width="260" height="100" alt="alt"/></picture>
+      <h3 class="partners-list__title">Babuline Pharma Pvt. Ltd., Індія</h3>
+    </li>
+    <li class="partners-list__item animation-down">
+      <picture class="partners-list__picture"><img class="partners-list__img" src="img/partners/partner-12.webp" srcset="img/partners/partner-12@2x.webp 2x" loading="lazy" width="260" height="100" alt="alt"/></picture>
+      <h3 class="partners-list__title">AESCULAPIUS FARMACEUTICI S.R.L., Італія</h3>
+    </li>
+    <li class="partners-list__item animation-down">
+      <picture class="partners-list__picture"><img class="partners-list__img" src="img/partners/partner-13.webp" srcset="img/partners/partner-13@2x.webp 2x" loading="lazy" width="260" height="100" alt="alt"/></picture>
+      <h3 class="partners-list__title">DIRECTSALUD S.L.U., Іспанія</h3>
+    </li>
+  </ul>
+</section>
+            
+<section class="blog-section">
+  <div class="container blog-section__container">
+    <header class="blog-section__header animation-down">
+      <h2 class="section-title blog-section__title">Блог</h2><a class="button blog-section__button blog-section__button--hidden-md" href="#">Усі новини</a>
+    </header>
+  </div>
+  <div class="container container--fluid">
+    <ul class="blog-section__list">
+      <li class="blog-section__item animation-down"><a class="blog-card" href="#">
+          <div class="blog-card__descr">
+            <picture class="blog-card__picture"><img class="blog-card__img" src="img/blog-img-small.webp" srcset="img/blog-img-small@2x.webp 2x" loading="lazy" width="152" height="125" alt="alt"/></picture>
+            <h3 class="blog-card__title">Fidia Academy AWC - Вебінари</h3><span class="blog-card__more">
+              <svg class="blog-card__more-icon" width="8" height="12">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg></span>
+          </div>
+          <div class="blog-card__info"><span class="blog-card__category">Long Category Title</span>
+            <time class="blog-card__date">21.05.2023</time>
+          </div></a></li>
+      <li class="blog-section__item animation-down"><a class="blog-card" href="#">
+          <div class="blog-card__descr">
+            <picture class="blog-card__picture"><img class="blog-card__img" src="img/blog-img-small.webp" srcset="img/blog-img-small@2x.webp 2x" loading="lazy" width="152" height="125" alt="alt"/></picture>
+            <h3 class="blog-card__title">Відкрийте для себе гіалуронову кислоту (ГК) у загоєнні ран</h3><span class="blog-card__more">
+              <svg class="blog-card__more-icon" width="8" height="12">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg></span>
+          </div>
+          <div class="blog-card__info"><span class="blog-card__category">Medical</span>
+            <time class="blog-card__date">1.05.2023</time>
+          </div></a></li>
+      <li class="blog-section__item animation-down"><a class="blog-card" href="#">
+          <div class="blog-card__descr">
+            <picture class="blog-card__picture"><img class="blog-card__img" src="img/blog-img-small.webp" srcset="img/blog-img-small@2x.webp 2x" loading="lazy" width="152" height="125" alt="alt"/></picture>
+            <h3 class="blog-card__title">Відкрийте для себе рішення регенеративної медицини для загоєння ран</h3><span class="blog-card__more">
+              <svg class="blog-card__more-icon" width="8" height="12">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg></span>
+          </div>
+          <div class="blog-card__info"><span class="blog-card__category">Medical</span>
+            <time class="blog-card__date">21.05.2023</time>
+          </div></a></li>
+      <li class="blog-section__item animation-down"><a class="blog-card" href="#">
+          <div class="blog-card__descr">
+            <picture class="blog-card__picture"><img class="blog-card__img" src="img/blog-img-small.webp" srcset="img/blog-img-small@2x.webp 2x" loading="lazy" width="152" height="125" alt="alt"/></picture>
+            <h3 class="blog-card__title">Думка Wound Experts щодо продукції Fidia</h3><span class="blog-card__more">
+              <svg class="blog-card__more-icon" width="8" height="12">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg></span>
+          </div>
+          <div class="blog-card__info"><span class="blog-card__category">Medical</span>
+            <time class="blog-card__date">21.05.2023</time>
+          </div></a></li>
+    </ul><a class="button blog-section__button blog-section__button--visible-md" href="#">Усі новини</a>
+  </div>
+</section>
+            
+<section class="feedback-section">
+  <div class="container feedback-section__container">
+    <div class="feedback-section__left animation-down">
+      <form class="form" id="form" autocomplete="off" novalidate="novalidate">
+        <h2 class="section-title form__title">Зв'язатися з нами</h2>
+        <p class="form__descr">Ми завжди раді зворотньому зв’язку</p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1387.2319097717084!2d30.85234576952149!3d50.381572897048784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4e802be9b4077%3A0x44c173a0de5eac84!2sBoryspilska%20St%2C%207%2C%20Hora%2C%20Kyivs&#39;ka%20oblast%2C%2008324!5e0!3m2!1sen!2sua!4v1688812608413!5m2!1sen!2sua" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" class="feedback-section__map feedback-section__map--visible-md" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="form__row">
+          <div class="form__group form__group--6">
+            <input class="input form__input" id="inputName" type="text" name="inputFirstName" placeholder="" autocomplete="off" required="required"/>
+            <label class="form__placeholder">Ім'я *</label>
+          </div>
+          <div class="form__group form__group--6">
+            <input class="input form__input tell-input" id="inputPhone" type="text" name="inputPhone" placeholder="" autocomplete="off" required="required"/>
+          </div>
+        </div>
+        <div class="form__group">
+          <input class="input form__input" id="inputEmail" type="text" name="inputEmail" placeholder="" autocomplete="off" required="required"/>
+          <label class="form__placeholder">Пошта *</label>
+        </div>
+        <div class="form__group">
+          <textarea class="textarea form__input" id="textarea" name="message" rows="3" autocomplete="off" required="required"></textarea>
+          <label class="form__placeholder">Коментар</label>
+        </div>
+        <div class="form__group form__group--mb-30">
+          <p class="form__agree">Згоден з умовами <a href="#">політики конфіденційності</a></p>
+        </div>
+        <div class="form__button-group">
+          <button class="button button--green form__button">Надіслати</button>
+        </div>
+      </form>
+    </div>
+    <div class="feedback-section__right animation-fade"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1387.2319097717084!2d30.85234576952149!3d50.381572897048784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4e802be9b4077%3A0x44c173a0de5eac84!2sBoryspilska%20St%2C%207%2C%20Hora%2C%20Kyivs&#39;ka%20oblast%2C%2008324!5e0!3m2!1sen!2sua!4v1688812608413!5m2!1sen!2sua" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" class="feedback-section__map feedback-section__map--hidden-md" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+            
+<section class="contacts-section">
+  <div class="container contacts-section__container">
+    <ul class="contacts-list">
+      <li class="contacts-list__item animation-down">
+        <div class="contacts-list__pic">
+          <svg class="contacts-list__icon" width="24" height="49">
+            <use xlink:href="img/sprite.svg#facebook-outline"></use>
+          </svg>
+        </div>
+        <h3 class="contacts-list__title">Facebook Євролек-Україна</h3>
+        <div class="contacts-list__text">
+          <p><a href="#">Для гінекологів</a></p>
+          <p><a href="#">Для урологів</a></p>
+          <p><a href="#">Для фармацевтів</a></p>
+        </div>
+      </li>
+      <li class="contacts-list__item animation-down">
+        <div class="contacts-list__pic">
+          <svg class="contacts-list__icon" width="48" height="46">
+            <use xlink:href="img/sprite.svg#clock"></use>
+          </svg>
+        </div>
+        <h3 class="contacts-list__title">Графік роботи</h3>
+        <div class="contacts-list__text">
+          <p>ПН-ЧТ: 9.00-18.00</p>
+          <p>ПТ: 9.00-17.30</p>
+          <p>CБ-ВС: Вихідний</p>
+        </div>
+      </li>
+      <li class="contacts-list__item animation-down">
+        <div class="contacts-list__pic">
+          <svg class="contacts-list__icon" width="49" height="45">
+            <use xlink:href="img/sprite.svg#callback"></use>
+          </svg>
+        </div>
+        <h3 class="contacts-list__title">Ми на зв’язку</h3>
+        <div class="contacts-list__text">
+          <p><a href="mailto:info@eurolek.com.ua">info@eurolek.com.ua</a></p>
+          <p><a href="tel:+380442332557">(044) 233 25 57</a></p>
+        </div>
+      </li>
+      <li class="contacts-list__item animation-down">
+        <div class="contacts-list__pic">
+          <svg class="contacts-list__icon" width="43" height="53">
+            <use xlink:href="img/sprite.svg#location"></use>
+          </svg>
+        </div>
+        <h3 class="contacts-list__title">Наша адреса</h3>
+        <div class="contacts-list__text">
+          <p>08320 Україна</p>
+          <p>Київська область, Бориспільський район с. Велика Олександрівкавул. Бориспільська, 7</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+            
+<section class="seo-section">
+  <div class="container seo-section__container">
+    <h2 class="section-title seo-section__title animation-down">SEO текст</h2>
+    <div class="seo-section__text animation-down">
+      <p>Більше 55 років досліджень молекули ГІАЛУРОНОВОЇ КИСЛОТИ вивели Fidia на передові позиції у виробництві як натуральної, так і функціоналізованої ГІАЛУРОНОВОЇ КИСЛОТИ з використанням запатентованих та перевірених виробничих процесів з різними діапазонами молекулярної маси відповідно до конструктивних характеристик готової. </p>
+      <p>Більше 55 років досліджень молекули ГІАЛУРОНОВОЇ КИСЛОТИ вивели Fidia на передові позиції у виробництві як натуральної, так і функціоналізованої ГІАЛУРОНОВОЇ КИСЛОТИ з використанням запатентованих та перевірених виробничих процесів з різними діапазонами молекулярної маси відповідно до конструктивних характеристик готової. </p>
+      <p>Більше 55 років досліджень молекули ГІАЛУРОНОВОЇ КИСЛОТИ вивели Fidia на передові позиції у виробництві як натуральної, так і функціоналізованої ГІАЛУРОНОВОЇ КИСЛОТИ з використанням запатентованих та перевірених виробничих процесів з різними діапазонами молекулярної маси відповідно до конструктивних характеристик готової. </p>
+      <p>Більше 55 років досліджень молекули ГІАЛУРОНОВОЇ КИСЛОТИ вивели Fidia на передові позиції у виробництві як натуральної, так і функціоналізованої ГІАЛУРОНОВОЇ КИСЛОТИ з використанням запатентованих та перевірених виробничих процесів з різними діапазонами молекулярної маси відповідно до конструктивних характеристик готової. </p>
+    </div>
+    <button class="seo-section__more" type="button">Читати більше
+      <svg class="seo-section__more-icon" width="12" height="8">
+        <use xlink:href="img/sprite.svg#arrow-down"></use>
+      </svg>
+    </button>
+  </div>
+</section>
+        </main>
+
+        <!-- Footer -->
+        
+<footer class="footer">
+  <div class="container footer__container-top">
+    <div class="logo footer__logo"><a class="logo__link" href="#" aria-label="logo"><img class="logo__img" src="img/logo.svg" width="132" height="74" alt="logo"/></a></div>
+    <address class="social footer__social">
+      <ul class="social__list">
+        <li class="social__item"><a class="social__link social__link--phone" href="#">
+            <svg class="social__icon" width="21" height="21">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link social__link--facebook" href="#">
+            <svg class="social__icon" width="12" height="23">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link social__link--youtube" href="#">
+            <svg class="social__icon" width="22" height="15">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link social__link--telegram" href="#">
+            <svg class="social__icon" width="18" height="16">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link social__link--linkedin" href="#">
+            <svg class="social__icon" width="15" height="15">
+              <use xlink:href="img/sprite.svg#linkedin"></use>
+            </svg></a></li>
+      </ul>
+    </address>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__container-middle">
+      <nav class="footer-menu">
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Продукція</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Чому ми</a></li>
+          <li class="footer-menu__item is-dropdown"><a class="footer-menu__link is-dropdown__toggle" href="#">Про компанію
+              <svg class="footer-menu__arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="footer-menu__sub is-dropdown__menu">
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Про нас</a></li>
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Каталог (PDF)</a></li>
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Вхід для співробітників</a></li>
+            </ul>
+          </li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Фармаконагляд</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вакансії</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Партнери</a></li>
+          <li class="footer-menu__item is-dropdown"><a class="footer-menu__link is-dropdown__toggle" href="#">Професіоналам
+              <svg class="footer-menu__arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="footer-menu__sub is-dropdown__menu">
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Публікації</a></li>
+              <li class="footer-menu__sub-item"><a class="footer-menu__sub-link" href="#">Спеціальна пропозиція для клінік</a></li>
+            </ul>
+          </li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новини</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer__container-bottom">
+      <div class="footer__dev">Розробка сайту <a class="footer__dev-link" href="#"><img class="footer__dev-img" src="img/shafem.svg" width="90" height="20" alt="shafem logo"/></a></div>
+      <div class="footer__copyright">&copy; 2023 Всі права захищені</div>
+    </div>
+  </div>
+</footer>
+
+        <!-- Mobile Nav -->
+        
+<div class="mobile-nav">
+  <div class="mobile-nav__sidebar">
+    <div class="mobile-nav__inner">
+      <address class="social mobile-nav__social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--white" href="#">
+              <svg class="social__icon" width="21" height="21">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#">
+              <svg class="social__icon" width="12" height="23">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link social__link--youtube" href="#">
+              <svg class="social__icon" width="22" height="15">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link social__link--telegram" href="#">
+              <svg class="social__icon" width="18" height="16">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg></a></li>
+          <li class="social__item"><a class="social__link social__link--linkedin" href="#">
+              <svg class="social__icon" width="15" height="15">
+                <use xlink:href="img/sprite.svg#linkedin"></use>
+              </svg></a></li>
+        </ul>
+      </address>
+      <nav class="mobile-nav-menu">
+        <ul class="mobile-nav-menu__list">
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Продукція</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Чому ми</a></li>
+          <li class="mobile-nav-menu__item is-dropdown"><a class="mobile-nav-menu__link is-dropdown__toggle" href="#">Про компанію
+              <svg class="mobile-nav-menu__arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="mobile-nav-menu__sub is-dropdown__menu">
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Про нас</a></li>
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Каталог (PDF)</a></li>
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Вхід для співробітників</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Фармаконагляд</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Вакансії</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Партнери</a></li>
+          <li class="mobile-nav-menu__item is-dropdown"><a class="mobile-nav-menu__link is-dropdown__toggle" href="#">Професіоналам
+              <svg class="mobile-nav-menu__arrow" width="8" height="5">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="mobile-nav-menu__sub is-dropdown__menu">
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Публікації</a></li>
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Спеціальна пропозиція для клінік</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Новини</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-nav__work">
+        <svg class="mobile-nav__work-icon" width="33" height="32">
+          <use xlink:href="img/sprite.svg#clock"></use>
+        </svg>
+        <h3 class="mobile-nav__work-title">Графік роботи</h3>
+        <div class="mobile-nav__work-text">
+          <p>ПН-ЧТ: 9.00-18.00</p>
+          <p>ПТ: 9.00-17.30</p>
+          <p>CБ-ВС: Вихідний</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- Right Nav -->
+        
+<div class="right-nav">
+  <div class="right-nav__sidebar">
+    <div class="right-nav__inner">    
+      <nav class="right-nav-menu">
+        <ul class="right-nav-menu__list">
+          <li class="right-nav-menu__item"><a class="right-nav-menu__link" href="#">Вакансії</a></li>
+          <li class="right-nav-menu__item"><a class="right-nav-menu__link" href="#">Партнери</a></li>
+          <li class="right-nav-menu__item is-dropdown"><a class="right-nav-menu__link is-dropdown__toggle" href="#">Професіоналам
+              <svg class="right-nav-menu__arrow" width="12" height="8">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg></a>
+            <ul class="right-nav-menu__sub is-dropdown__menu">
+              <li class="right-nav-menu__sub-item"><a class="right-nav-menu__sub-link" href="#">Публікації</a></li>
+              <li class="right-nav-menu__sub-item"><a class="right-nav-menu__sub-link" href="#">Спеціальна пропозиція для клінік</a></li>
+            </ul>
+          </li>
+          <li class="right-nav-menu__item"><a class="right-nav-menu__link" href="#">Новини</a></li>
+          <li class="right-nav-menu__item"><a class="right-nav-menu__link" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+        <!-- Share -->
+        
+<div class="share">
+  <ul class="share__list">
+    <li class="share__item"><a class="share__link share__link--youtube" href="#">
+        <div class="share__pic">
+          <svg class="share__icon" width="22" height="15">
+            <use xlink:href="img/sprite.svg#youtube"></use>
+          </svg>
+        </div><span>Наш Youtube</span></a></li>
+    <li class="share__item"><a class="share__link share__link--telegram" href="#">
+        <div class="share__pic">
+          <svg class="share__icon" width="18" height="16">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
+        </div><span>Наш Telegram</span></a></li>
+    <li class="share__item"><a class="share__link share__link--linkedin" href="#">
+        <div class="share__pic">
+          <svg class="share__icon" width="15" height="15">
+            <use xlink:href="img/sprite.svg#linkedin"></use>
+          </svg>
+        </div><span>Наш Linkedin</span></a></li>
+    <li class="share__item"><a class="share__link share__link--facebook" href="#">
+        <div class="share__pic">
+          <svg class="share__icon" width="12" height="23">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+          </svg>
+        </div><span>Наш Facebook</span></a></li>
+  </ul>
+</div>
+        
+        <!-- Modals -->
+        
+<div class="modal-wrap">
+  <div class="modal" id="modal-login">
+    <div class="modal__inner">
+      <div class="modal__window">
+        <button class="modal__close" aria-label="Close modal" data-modal-close="data-modal-close" type="button">
+          <svg class="modal__close-icon" width="28" height="29">
+            <use xlink:href="img/sprite.svg#close-modal"></use>
+          </svg>
+        </button>
+        <h3 class="modal__title">Вхід для співробітників</h3>
+        <div class="modal__descr">
+          <p>Після вибору сервісу авторизуйтесь в системі.</p>
+          <p>Сервіс доступний тільки для співробітників компанії</p>
+        </div>
+        <ul class="modal-login">
+          <li class="modal-login__item"><a class="modal-login__link" href="#"> 
+              <div class="modal-login__pic">
+                <svg class="modal-login__icon" width="47" height="37">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
+              </div>
+              <div class="modal-login__content">
+                <h3 class="modal-login__title">Пошта Roundcube</h3>
+                <p class="modal-login__descr">Вхід до поштового сервісу Roundcube</p>
+              </div></a></li>
+          <li class="modal-login__item"><a class="modal-login__link" href="#"> 
+              <div class="modal-login__pic">
+                <svg class="modal-login__icon" width="47" height="37">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
+              </div>
+              <div class="modal-login__content">
+                <h3 class="modal-login__title">Пошта RainLoop</h3>
+                <p class="modal-login__descr">Вхід до поштового сервісу RainLoop</p>
+              </div></a></li>
+          <li class="modal-login__item"><a class="modal-login__link" href="#"> 
+              <div class="modal-login__pic">
+                <svg class="modal-login__icon" width="45" height="38">
+                  <use xlink:href="img/sprite.svg#file"></use>
+                </svg>
+              </div>
+              <div class="modal-login__content">
+                <h3 class="modal-login__title">Файлообмінник</h3>
+                <p class="modal-login__descr">Вхід до файлообміннику</p>
+              </div></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+    </body>
+</html>

@@ -1,0 +1,116 @@
+.expertise-card
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    min-height: 337px
+
+    @media ($max-md)
+        display: flex
+        flex-direction: column
+
+    &__picture
+        grid-column: 1 span
+        display: flex
+        width: 100%
+        height: 100%
+
+        @media ($max-md)
+            height: 185px
+    
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    
+    &__content
+        grid-column: 1 span
+        background: var(--white)
+    
+    &__inner
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        height: 100%
+        width: 100%
+        max-width: 585px
+        padding: 85px 30px 85px 50px
+
+        @media ($max-xl)
+            max-width: 465px
+
+        @media ($max-lg)
+            max-width: 384px
+
+        @media ($max-md)
+            max-width: 100%
+            padding: 25px 15px 0
+
+        &:before
+            position: absolute
+            top: 25px
+            right: 0
+            width: 50px
+            height: 50px
+            border-top: 1px solid var(--blue)
+            border-right: 1px solid var(--blue)
+            content: ""
+
+            @media ($max-md)
+                top: 15px
+                right: 15px
+
+    &__title
+        font-size: 22px
+        font-weight: 900
+        line-height: 1.2
+        margin: 0 0 15px
+    
+    &__descr
+        margin-bottom: 0
+        max-width: 400px
+
+        @media ($max-md)
+            font-size: 14px
+            max-width: 100%
+    
+    &__number
+        position: absolute
+        bottom: 20px
+        right: 0
+        background: linear-gradient(to bottom, var(--blue), #fff)
+        font-size: 75px
+        font-weight: 900
+        line-height: 1
+        color: var(--white)
+        -webkit-background-clip: text
+        -webkit-text-stroke: 2px transparent
+        text-align: right
+
+        @media ($max-md)
+            position: relative
+            bottom: -7px
+            right: auto
+            text-align: left
+
+    &--reverse
+        
+        @media ($min-md)
+
+            .expertise-card__content
+                order: 1
+
+            .expertise-card__inner
+                margin-left: auto
+                padding: 85px 50px 85px 30px
+
+                &:before
+                    right: auto
+                    left: 0
+                    transform: rotate(270deg)
+
+            .expertise-card__number
+                right: auto
+                left: 0
+
+            .expertise-card__picture
+                order: 2

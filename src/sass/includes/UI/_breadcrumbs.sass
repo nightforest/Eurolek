@@ -1,0 +1,76 @@
+.breadcrumbs
+    margin-bottom: 10px
+
+    &__list
+        padding-left: 0
+        list-style: none
+        margin: 0
+        font-size: 0
+
+        @media ($max-md)
+            text-align: center
+
+    &__item
+        line-height: 1.2
+        position: relative
+        color: var(--black)
+        display: inline
+        font-weight: 400
+        font-size: 22px
+
+        @media ($max-lg)
+            font-size: 18px
+        
+        @media ($max-md)
+            font-size: 14px
+
+        &:after
+            margin: 0 10px
+            content: '/'
+
+        &:last-child
+            margin-right: 0
+
+            &:after
+                display: none
+
+    &__link
+        position: relative
+        color: var(--black)
+        text-decoration: none
+        display: inline
+        border-bottom: 1px solid var(--black)
+        transition: all .5s ease
+
+        &:hover
+            color: var(--green)
+            border-color: transparent
+
+        &:active
+            color: var(--green)
+            border-color: transparent
+
+        &:focus-visible
+            color: var(--green)
+            border-color: transparent
+
+    &--white
+
+        .breadcrumbs__item
+            color: var(--white)
+
+        .breadcrumbs__link
+            color: var(--white)
+            border-color: var(--white)
+
+            &:hover
+                color: var(--white)
+                border-color: transparent
+
+            &:active
+                color: var(--white)
+                border-color: transparent
+
+            &:focus-visible
+                color: var(--white)
+                border-color: transparent

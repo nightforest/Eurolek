@@ -1,0 +1,107 @@
+.right-nav
+    position: fixed
+    top: 0
+    left: 0
+    z-index: $z-index-2
+    width: 100%
+    height: calc(var(--vh) * 100)
+    outline: 0
+    background: rgba(0, 0, 0, .25)
+    opacity: 0
+    visibility: hidden
+    transition: all .5s ease
+
+    &.is-visible
+        opacity: 1
+        visibility: visible
+
+        .right-nav__sidebar
+            visibility: visible
+            transform: translate3d(0, 0, 0)
+
+    &__sidebar
+        position: fixed
+        top: 0
+        right: 0
+        width: 100%
+        max-width: 445px
+        height: 100%
+        background: var(--white) url(../img/stars-right.svg) no-repeat right bottom
+        visibility: hidden
+        transform: translate3d(100%, 0, 0)
+        box-shadow: 0 19px 33px 0 rgba(111, 109, 113, .13)
+        transition: all .5s ease
+
+    &__inner
+        display: flex
+        flex-direction: column
+        height: 100%
+        width: 100%
+        padding: 115px 60px 60px
+        overflow-y: auto
+
+    &-menu
+
+        &__list
+            margin: 0
+            padding: 0
+            list-style: none
+        
+        &__item
+            position: relative
+
+            &:not(:last-child)
+                margin-bottom: 45px
+
+            &.is-active
+
+                .right-nav-menu__arrow
+                    transform: rotateX(180deg)
+                
+                .right-nav-menu__sub
+                    display: block
+
+        &__link
+            display: inline-flex
+            align-items: center
+            gap: 10px
+            font-size: 25px
+            font-weight: 400
+            line-height: 1.2
+            color: var(--black)
+            transition: color .5s ease
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--green)
+
+        &__arrow
+            color: var(--blue)
+            transition: transform .5s ease
+
+        &__sub
+            list-style: none
+            margin: 0
+            padding: 20px 0 0
+            display: none
+
+            &-item
+
+                &:not(:last-child)
+                    margin-bottom: 15px
+
+            &-link
+                display: inline-flex
+                align-items: center
+                gap: 5px
+                font-size: 20px
+                font-weight: 400
+                line-height: 1.2
+                color: var(--black)
+                transition: color .5s ease
+
+                &:hover,
+                &:active,
+                &:focus-visible
+                    color: var(--green)

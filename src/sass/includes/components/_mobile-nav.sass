@@ -1,0 +1,129 @@
+.mobile-nav
+    position: fixed
+    top: 0
+    left: 0
+    z-index: $z-index-2
+    width: 100%
+    height: calc(var(--vh) * 100)
+    outline: 0
+    background: rgba(0, 0, 0, .25)
+    opacity: 0
+    visibility: hidden
+    transition: all .5s ease
+
+    &.is-visible
+        opacity: 1
+        visibility: visible
+
+        .mobile-nav__sidebar
+            visibility: visible
+            transform: translate3d(0, 0, 0)
+
+    &__sidebar
+        position: fixed
+        top: 0
+        right: 0
+        width: 100%
+        max-width: 445px
+        height: 100%
+        background: var(--blue)
+        visibility: hidden
+        transform: translate3d(100%, 0, 0)
+        transition: all .5s ease
+
+    &__inner
+        display: flex
+        flex-direction: column
+        height: 100%
+        width: 100%
+        padding: 115px 20px 20px
+        overflow-y: auto
+
+    &-menu
+        margin-bottom: 30px
+
+        &__list
+            margin: 0
+            padding: 0
+            list-style: none
+        
+        &__item
+            position: relative
+            text-align: center
+
+            &:not(:last-child)
+                margin-bottom: 20px
+
+            &.is-active
+
+                .mobile-nav-menu__arrow
+                    transform: rotateX(180deg)
+                
+                .mobile-nav-menu__sub
+                    display: block
+
+        &__link
+            display: inline-flex
+            align-items: center
+            gap: 5px
+            font-size: 14px
+            font-weight: 400
+            line-height: 1.2
+            text-transform: uppercase
+            color: var(--white)
+            transition: color .5s ease
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--blue-hover)
+
+        &__arrow
+            transition: transform .5s ease
+
+        &__sub
+            list-style: none
+            margin: 0
+            padding: 0
+            display: none
+
+            &-link
+                display: inline-flex
+                align-items: center
+                gap: 5px
+                font-size: 14px
+                font-weight: 400
+                line-height: 1.2
+                text-transform: uppercase
+                color: var(--white)
+                transition: color .5s ease
+
+                &:hover,
+                &:active,
+                &:focus-visible
+                    color: var(--blue-hover)
+
+    &__social
+        margin: 0 auto 55px
+
+    &__work
+        color: var(--white)
+        text-align: center
+
+        &-icon
+            margin-bottom: 5px
+        
+        &-title
+            font-size: 16px
+            line-height: 1.2
+            font-weight: 400
+            margin: 0 0 15px
+
+        &-text
+            font-size: 16px
+            font-weight: 700
+            text-transform: uppercase
+            line-height: 1.3
+
+            p
+                margin: 0

@@ -1,0 +1,13 @@
+section.banner-section
+    picture.banner-section__bg
+        source(srcset="img/banner-img-mob@2x.webp 2x, img/banner-img-mob.webp" width="320" height="282" media="(max-width: 767.98px)")
+        img.banner-section__bg-img(src="img/banner-img.webp" srcset="img/banner-img@2x.webp 2x" loading="lazy" width="1920" height="502"  alt="alt")
+
+    .container.banner-section__container
+        nav.breadcrumbs.breadcrumbs--white.banner-section__breadcrumbs.animation-down(aria-label="breadcrumb")
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#") Головна
+                li.breadcrumbs__item(aria-current="page") Про компанію
+
+        h2.section-title.banner-section__title.animation-down Про компанію

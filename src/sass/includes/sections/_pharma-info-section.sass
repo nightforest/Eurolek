@@ -1,0 +1,42 @@
+.pharma-info-section
+    padding: 100px 0
+    background: linear-gradient(to bottom, #e6e6e6, #fff)
+
+    @media ($max-md)
+        padding: 25px 0
+
+    &__row
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        gap: 30px
+        margin-bottom: 40px
+
+        @media ($max-md)
+            display: flex
+            flex-direction: column
+            margin-bottom: 20px
+    
+    &__col
+        grid-column: 6 span
+
+    &__text
+        font-size: 16px
+        color: #4A4A4A
+
+        @media ($max-md)
+            font-size: 14px
+
+        p
+            
+            &:last-child
+                margin-bottom: 0
+
+        a
+            font-weight: 700
+            color: var(--green)
+            transition: color .5s ease
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--blue)

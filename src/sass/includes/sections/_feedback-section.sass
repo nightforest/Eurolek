@@ -1,0 +1,69 @@
+.feedback-section
+    padding: 50px 0
+    background: var(--blue)
+    overflow: hidden
+
+    @media ($max-md)
+        padding: 40px 0
+
+    &__container
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        align-items: center
+        gap: 100px
+
+        @media ($max-xl)
+            gap: 30px
+
+        @media ($max-md)
+            display: block
+
+    &__title
+
+        @media ($max-md)
+            text-align: center
+            margin-bottom: 25px
+
+    &__left
+        grid-column: 6 span
+
+    &__right
+        grid-column: 6 span
+
+        @media ($max-md)
+            display: none
+
+    &__map
+        width: calc(50vw - 50px)
+
+        @media ($max-xl)
+            width: calc(50vw - 15px)
+
+        &--visible-md
+            display: none
+
+            @media ($max-md)
+                display: block
+                height: 185px
+                width: 100%
+                margin-bottom: 20px
+    
+    &--grey
+        position: relative
+        background: linear-gradient(to bottom, #e6e6e6, #fff)
+        overflow: hidden
+        z-index: $z-index-0
+
+        &:before
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: url(../img/top-section-bg.svg) no-repeat left top
+            opacity: .05
+            content: ""
+            z-index: $z-index-minus
+
+            @media ($max-md)
+                background-size: contain

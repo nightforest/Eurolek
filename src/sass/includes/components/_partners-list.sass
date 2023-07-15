@@ -1,0 +1,47 @@
+.partners-list
+    margin: 0 auto
+    padding: 0
+    list-style: none
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    gap: 1px
+    overflow: hidden
+    max-width: 1770px
+
+    &__item
+        flex: 0 0 calc(20% - 4px / 5)
+        max-width: calc(20% - 4px / 5)
+        padding: 10px 10px 20px
+        box-shadow: 0 0 0 1px #D9D9D9
+
+        @media ($max-lg)
+            flex: 0 0 calc(25% - 3px / 4)
+            max-width: calc(25% - 3px / 4)
+
+        @media ($max-md)
+            flex: 0 0 calc(50% - 1px / 2)
+            max-width: calc(50% - 1px / 2)
+
+    &__picture
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 10px
+
+    &__img
+        max-width: 100%
+        height: auto
+    
+    &__title
+        margin: 0
+        font-size: 22px
+        font-weight: 400
+        line-height: 1
+        text-align: center
+
+        @media ($max-xl)
+            font-size: 16px
+
+        @media ($max-md)
+            font-size: 14px

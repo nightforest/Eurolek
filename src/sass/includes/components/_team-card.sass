@@ -1,0 +1,51 @@
+.team-card
+
+    &__picture
+        display: flex
+        width: 100%
+        height: 344px
+        margin-bottom: 15px
+
+        @media ($max-md)
+            height: 185px
+            margin-bottom: 8px
+    
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    
+    &__bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 10px
+
+        @media ($max-md)
+            flex-direction: column
+            text-align: center
+
+    &__name
+        font-size: 25px
+        font-weight: 400
+        color: var(--white)
+        line-height: 1.2
+        margin: 0 0 5px
+
+        @media ($max-md)
+            font-size: 22px
+            margin-bottom: 2px
+    
+    &__position
+        font-size: 16px
+        font-weight: 400
+        color: #B2E0F4
+        margin: 0
+
+    &__social
+
+        .social__list
+            justify-content: flex-end
+
+            @media ($max-md)
+                justify-content: center

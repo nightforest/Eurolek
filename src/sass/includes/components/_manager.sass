@@ -1,0 +1,53 @@
+.manager
+    position: relative
+    width: 100%
+    height: 100%
+
+    &__picture
+        position: absolute
+        top: 0
+        left: 0
+        display: flex
+        width: 100%
+        height: 100%
+
+        @media ($max-md)
+            position: relative
+            top: auto
+            left: auto
+    
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    &__descr
+        position: absolute
+        bottom: 20px
+        left: 20px
+        background: var(--white)
+        padding: 20px
+        min-width: 230px
+
+        @media ($max-md)
+            bottom: 10px
+            left: 10px
+            padding: 15px
+            min-width: 145px
+
+    &__name
+        font-size: 22px
+        font-weight: 900
+        margin: 0
+        line-height: 1.2
+
+        @media ($max-md)
+            font-size: 18px
+
+    &__position
+        font-size: 18px
+        color: var(--green)
+        margin: 0
+
+        @media ($max-md)
+            font-size: 16px

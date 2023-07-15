@@ -1,0 +1,68 @@
+.mission-card
+    position: relative
+    padding: 12px 30px 15px
+    border: 1px solid #E6E6E6
+
+    @media ($max-md)
+        padding: 20px
+
+    &.is-open
+
+        .mission-card__title
+            color: var(--blue)
+
+        .mission-card__toggle-icon
+            transform: rotateX(180deg)
+
+    &:before
+        position: absolute
+        top: 12px
+        right: 12px
+        width: 40px
+        height: 40px
+        border-top: 1px solid var(--blue)
+        border-right: 1px solid var(--blue)
+        content: ""
+
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    &__title
+        font-size: 25px
+        font-weight: 900
+        line-height: 1.25
+        margin: 0
+        color: var(--green)
+        transition: all .5s ease
+
+        @media ($max-md)
+            font-size: 18px
+
+    &__toggle
+        display: none
+        padding: 5px
+        min-width: 50px
+        width: 50px
+        height: 50px
+
+        @media ($max-md)
+            display: flex
+
+        &-icon
+            transition: all .5s ease
+
+    &__body
+        font-size: 16px
+        color: #4D4D4D
+
+        @media ($max-md)
+            max-height: 0
+            overflow: hidden
+            transition: all .5s ease
+            will-change: max-height
+            box-sizing: content-box
+
+        p
+            margin: 0

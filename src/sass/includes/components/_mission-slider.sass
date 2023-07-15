@@ -1,0 +1,23 @@
+.mission-slider
+    padding-bottom: 20px
+
+    &__picture
+        display: flex
+
+        @media ($max-md)
+            height: 185px
+
+    &__img
+        max-width: 100%
+        height: auto
+
+        @media ($max-md)
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    &__prev,
+    &__next
+
+        @media ($max-md)
+            display: none

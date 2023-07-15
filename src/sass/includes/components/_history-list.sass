@@ -1,0 +1,68 @@
+.history-list
+    margin: 0
+    padding: 0 20px 0 0
+    list-style: none
+    max-height: 480px
+    overflow-y: auto
+    scrollbar-width: thin
+    scrollbar-color: #EEF1F3 #fff
+
+    @media ($max-md)
+        max-height: 630px
+
+    &::-webkit-scrollbar
+        width: 9px
+
+    &::-webkit-scrollbar-track
+        background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, .5), transparent)
+        border-radius: 0
+
+    &::-webkit-scrollbar-thumb
+        border: none
+        background-color: #fff
+        border-radius: 0
+
+    &__item
+        position: relative
+
+        &:not(:last-child)
+            margin-bottom: 20px
+
+        &:nth-child(even)
+
+            .history-list__year
+                font-size: 45px
+
+                @media ($max-md)
+                    font-size: 22px
+
+    &__year
+        position: relative
+        display: inline-flex
+        font-size: 22px
+        font-weight: 900
+        line-height: 1
+        padding: 40px 40px 0 0
+        color: var(--white)
+        margin-bottom: 15px
+
+        &:before
+            position: absolute
+            top: 0
+            right: 0
+            width: 50px
+            height: 50px
+            border-top: 1px solid var(--white)
+            border-right: 1px solid var(--white)
+            content: ""
+
+    &__text
+        color: #B2E0F4
+        font-size: 16px
+        line-height: 1.7
+
+        @media ($max-md)
+            font-size: 14px
+
+        p
+            margin: 0
